@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0524F4087145B7128DD1C21CB1054C87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		08BF484D86156DCA70AFE2F6FDD0973B /* Pods-DafuFruitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF88E41F673F834A78A56B0DD48E81F9 /* Pods-DafuFruitUITests-dummy.m */; };
+		40FF71A4B6AA0A396BE4C94BDCBBAAB0 /* Pods-DafuFruit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF7F1A7402F2AB6F0B4ED13178FBFB /* Pods-DafuFruit-dummy.m */; };
+		9CF5AB562B1125DCBC5D4BF7093D4CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A540541EB0951D904B59279C005B4882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C3FC5DCCBB541FA4421FEDDB361E104E /* Pods-DafuFruitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 034D27B39C7D0930706611F57247F145 /* Pods-DafuFruitTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032820E280C653AFBD43B9D4B94B894D /* libPods-DafuFruitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D27B39C7D0930706611F57247F145 /* Pods-DafuFruitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DafuFruitTests-dummy.m"; sourceTree = "<group>"; };
+		06AD4389F2832DC594B1565301CE195E /* AVIMKeyedConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMKeyedConversation.h; sourceTree = "<group>"; };
+		0997FB4ABB635DB0CD39849C3AB8A33E /* Pods-DafuFruitTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruitTests-resources.sh"; sourceTree = "<group>"; };
+		09A496014FE614B207515CC71739F438 /* AVIMConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMConversation.h; sourceTree = "<group>"; };
+		0AB6A1EF150AA14E719DBF328E06AE4D /* AVAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVAvailability.h; sourceTree = "<group>"; };
+		0E638A329920257C40CD3631B47D344F /* AVCloudQueryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVCloudQueryResult.h; sourceTree = "<group>"; };
+		1814A36317537428285212F7B4AD1211 /* AVSearchQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSearchQuery.h; sourceTree = "<group>"; };
+		1D5168487248A61FF109D1C7B29C8250 /* Pods-DafuFruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruitTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E89B59B9E776E7A09E4A43E82C05E7F /* AVRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVRole.h; sourceTree = "<group>"; };
+		20064E1E063A7A04476C8F3FAA6C6232 /* AVRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVRelation.h; sourceTree = "<group>"; };
+		2670BC7660DCD3E937541116B75975AF /* AVConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVConstants.h; sourceTree = "<group>"; };
+		26D2609879A2BAC21E359EECBCE117AC /* AVSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSignature.h; sourceTree = "<group>"; };
+		2D264CDFE9C1187BE308F3E627138900 /* AVUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVUser.h; sourceTree = "<group>"; };
+		2ED97A10681FB77E58E45D8166E3D9FA /* Pods-DafuFruitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DafuFruitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30DE17EEB8DA3D5D5ED196DF48D4C515 /* AVGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVGroup.h; sourceTree = "<group>"; };
+		36F59CD16C86F817A232460F9236CDEA /* libPods-DafuFruit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38AD3A1F35BE36BD168B99B941C7FBA4 /* AVSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSession.h; sourceTree = "<group>"; };
+		3B8EC6CD33B21428FADDC5B62D484C24 /* AVIMMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMMessage.h; sourceTree = "<group>"; };
+		4416095E0CBDC3E2E2D78191958D2EA9 /* AVIMConversationQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMConversationQuery.h; sourceTree = "<group>"; };
+		472B49B611C8235D4E9D8131E5B98F10 /* AVIMLocationMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMLocationMessage.h; sourceTree = "<group>"; };
+		493A9025F3760B36370B2561E980D540 /* AVIMUserOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMUserOptions.h; sourceTree = "<group>"; };
+		4A014FFFD9D4983032519996189980FC /* AVIMVideoMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMVideoMessage.h; sourceTree = "<group>"; };
+		4F146613C8B89D2A6BC3B5D4BD4A48B8 /* AVAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVAnonymousUtils.h; sourceTree = "<group>"; };
+		4FC90BC24FB2DC74BF0CC3F37FF7B47C /* AVGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVGeoPoint.h; sourceTree = "<group>"; };
+		530CBFC2BBD6B96F4235CE2408A8141F /* Pods-DafuFruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruit.debug.xcconfig"; sourceTree = "<group>"; };
+		572EEBCC9BE82D904FC45EF1E8D50C1F /* Pods-DafuFruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C64F9EDF685661A0457760EDE208816 /* AVIMConversationUpdateBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMConversationUpdateBuilder.h; sourceTree = "<group>"; };
+		5CA0C1AE303BBF4488F8AF545DFE5F22 /* Pods-DafuFruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruit.release.xcconfig"; sourceTree = "<group>"; };
+		61F7FAF68569DAD5363E8D0AA9E011A2 /* AVACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVACL.h; sourceTree = "<group>"; };
+		65AEFCC65FFD3A125159A5ADA375EC0C /* AVObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVObject.h; sourceTree = "<group>"; };
+		65B88645711C68FC802578C2A2398918 /* AVCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVCloud.h; sourceTree = "<group>"; };
+		6DA258606A4EECDD8B24107A8FE7F75C /* Pods-DafuFruit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruit-frameworks.sh"; sourceTree = "<group>"; };
+		7171BFB2734311E6F9B11163D103FBF0 /* AVInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVInstallation.h; sourceTree = "<group>"; };
+		71F229F3694887F2C112B18467DA5480 /* Pods-DafuFruitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DafuFruitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7512FF1A6090BC24F2AA3006C7FD2FD7 /* AVIMTextMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMTextMessage.h; sourceTree = "<group>"; };
+		7696392A7AE501FF9129909DE0CADA4A /* AVLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVLogger.h; sourceTree = "<group>"; };
+		77251FD7EC85AC5D9727D841766FEC04 /* AVMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVMessage.h; sourceTree = "<group>"; };
+		78BB741B16432F7844BE82F061B05E24 /* AVHistoryMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVHistoryMessage.h; sourceTree = "<group>"; };
+		7D25DE59473F1661D3F7A1C158F19B49 /* Pods-DafuFruitTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruitTests-frameworks.sh"; sourceTree = "<group>"; };
+		7F9456598688E4052B1CCFA01201AEE4 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libAVOSCloudIM.a; sourceTree = "<group>"; };
+		7FFF7F1A7402F2AB6F0B4ED13178FBFB /* Pods-DafuFruit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DafuFruit-dummy.m"; sourceTree = "<group>"; };
+		8098B909D069E4A656549575F3B9BEAE /* Pods-DafuFruit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DafuFruit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		80A89878C4D5485ED8A1485F42E3B79F /* AVIMFileMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMFileMessage.h; sourceTree = "<group>"; };
+		819CDEB7832762BF5C9E9CF0FBC02DFB /* AVObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVObject+Subclass.h"; sourceTree = "<group>"; };
+		81ACC03114DAD5C35953AA9ED8C56904 /* AVOSCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVOSCloud.h; sourceTree = "<group>"; };
+		8452C9C7D8FD61D1DCBFA65DE5B8E174 /* libAVOSCloud.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libAVOSCloud.a; sourceTree = "<group>"; };
+		85FED1A2CD27696755B3E10C74025EB0 /* AVAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVAnalytics.h; sourceTree = "<group>"; };
+		86B3465F9635C3C2E1B6A9CAD6841D5F /* libPods-DafuFruitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F8DA907B7F71586D22707C740F23CF /* AVQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVQuery.h; sourceTree = "<group>"; };
+		8D7603153447E4FAC306800697E1A063 /* AVHistoryMessageQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVHistoryMessageQuery.h; sourceTree = "<group>"; };
+		90D6655641929CC8A8B095FF0D119D0F /* AVFileQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVFileQuery.h; sourceTree = "<group>"; };
+		90EC30D04AFC6FE8729DF63557DD594E /* Pods-DafuFruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9596AC55D686132791ADF8B84ACCF0ED /* AVSaveOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSaveOption.h; sourceTree = "<group>"; };
+		96CF8C3A5E82F582E48E0E8B5434240E /* libAVOSCloudCrashReporting.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libAVOSCloudCrashReporting.a; sourceTree = "<group>"; };
+		986F9F6E7C934C73521F6E4CE59DBD9A /* AVFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVFile.h; sourceTree = "<group>"; };
+		995C1857E716E9F14E6EDD894D5562B7 /* AVStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVStatus.h; sourceTree = "<group>"; };
+		9FFE827D146A0D995D0645D4F003E5C7 /* AVOSCloudIM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVOSCloudIM.h; sourceTree = "<group>"; };
+		A8E5F62DF96BCE0136A7120239E2FD22 /* AVIMAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMAvailability.h; sourceTree = "<group>"; };
+		AA0E093EDC64D9B133EAB074A0BBD6ED /* AVPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVPush.h; sourceTree = "<group>"; };
+		AC7CEC07AB599F156C5813766B32A974 /* AVIMClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMClient.h; sourceTree = "<group>"; };
+		AF88E41F673F834A78A56B0DD48E81F9 /* Pods-DafuFruitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DafuFruitUITests-dummy.m"; sourceTree = "<group>"; };
+		B487797E6212ACA16F785B107A681094 /* AVSearchSortBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSearchSortBuilder.h; sourceTree = "<group>"; };
+		C241D7A21E12F4047CEC8580EB94092D /* Pods-DafuFruitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DafuFruitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C29ACB548F185739A519678A0313E595 /* Pods-DafuFruit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruit-resources.sh"; sourceTree = "<group>"; };
+		CA908FAB8752E2E7D414061A9D9AC199 /* AVIMTypedMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMTypedMessage.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D174CD63DAF209427C46965C6524870F /* Pods-DafuFruitUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruitUITests-resources.sh"; sourceTree = "<group>"; };
+		D4C94922C2F4280545A4F8F484A82940 /* AVIMClientOpenOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMClientOpenOption.h; sourceTree = "<group>"; };
+		D50EA8BE876BA696A5FD477B04F0B941 /* AVIMCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMCommon.h; sourceTree = "<group>"; };
+		E48BB1D73E0513EE9DC06F96B1975EF6 /* AVIMImageMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMImageMessage.h; sourceTree = "<group>"; };
+		E7433A59A5D3852C582EE121696D14AC /* Pods-DafuFruitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DafuFruitUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E9A8C7AEAE92A6D70FB663372F99C218 /* AVSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVSubclassing.h; sourceTree = "<group>"; };
+		E9C32E3FDBF0401145B404B3219FCCE1 /* AVOSCloudCrashReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVOSCloudCrashReporting.h; sourceTree = "<group>"; };
+		F1A110A1508D8B29B0AB660B980FD741 /* Pods-DafuFruit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DafuFruit-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4FDCA7D33B9B1BE865182EF7E79B2F9 /* AVIMSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMSignature.h; sourceTree = "<group>"; };
+		F72120FC69D73FD95BAD0F1FD602477F /* Pods-DafuFruitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DafuFruitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F96817DA406B587B7398529A24FEEE98 /* Pods-DafuFruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DafuFruitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFF7D38E6B6A267E10E6A5CD5F10ED53 /* AVIMAudioMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AVIMAudioMessage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9980E271AEE74329B21EFB3E2E7537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0524F4087145B7128DD1C21CB1054C87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A21A0765519799AD83FBF0C07E421C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF5AB562B1125DCBC5D4BF7093D4CAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7D7FEA21CDFAD3AD32E1CFD932068E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A540541EB0951D904B59279C005B4882 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13FA1C4D7086B94BCB8D47475C94B3AB /* AVOSCloudIM */ = {
+			isa = PBXGroup;
+			children = (
+				FFF7D38E6B6A267E10E6A5CD5F10ED53 /* AVIMAudioMessage.h */,
+				A8E5F62DF96BCE0136A7120239E2FD22 /* AVIMAvailability.h */,
+				AC7CEC07AB599F156C5813766B32A974 /* AVIMClient.h */,
+				D4C94922C2F4280545A4F8F484A82940 /* AVIMClientOpenOption.h */,
+				D50EA8BE876BA696A5FD477B04F0B941 /* AVIMCommon.h */,
+				09A496014FE614B207515CC71739F438 /* AVIMConversation.h */,
+				4416095E0CBDC3E2E2D78191958D2EA9 /* AVIMConversationQuery.h */,
+				5C64F9EDF685661A0457760EDE208816 /* AVIMConversationUpdateBuilder.h */,
+				80A89878C4D5485ED8A1485F42E3B79F /* AVIMFileMessage.h */,
+				E48BB1D73E0513EE9DC06F96B1975EF6 /* AVIMImageMessage.h */,
+				06AD4389F2832DC594B1565301CE195E /* AVIMKeyedConversation.h */,
+				472B49B611C8235D4E9D8131E5B98F10 /* AVIMLocationMessage.h */,
+				3B8EC6CD33B21428FADDC5B62D484C24 /* AVIMMessage.h */,
+				F4FDCA7D33B9B1BE865182EF7E79B2F9 /* AVIMSignature.h */,
+				7512FF1A6090BC24F2AA3006C7FD2FD7 /* AVIMTextMessage.h */,
+				CA908FAB8752E2E7D414061A9D9AC199 /* AVIMTypedMessage.h */,
+				493A9025F3760B36370B2561E980D540 /* AVIMUserOptions.h */,
+				4A014FFFD9D4983032519996189980FC /* AVIMVideoMessage.h */,
+				9FFE827D146A0D995D0645D4F003E5C7 /* AVOSCloudIM.h */,
+				FB4FD2FAEE9449466908FF0984DC17A8 /* Frameworks */,
+			);
+			path = AVOSCloudIM;
+			sourceTree = "<group>";
+		};
+		23AA2F3B8E6B39BE8D1EC945A7BC1A74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E58A232A398CCBC9E45849B5B80641A /* AVOSCloud */,
+				F830F56A808BCFFFB7E4D81E7128BAF8 /* AVOSCloudCrashReporting */,
+				13FA1C4D7086B94BCB8D47475C94B3AB /* AVOSCloudIM */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A80B7D4E37F00E186505AD846EDCB1C /* Pods-DafuFruitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2ED97A10681FB77E58E45D8166E3D9FA /* Pods-DafuFruitUITests-acknowledgements.markdown */,
+				C241D7A21E12F4047CEC8580EB94092D /* Pods-DafuFruitUITests-acknowledgements.plist */,
+				AF88E41F673F834A78A56B0DD48E81F9 /* Pods-DafuFruitUITests-dummy.m */,
+				E7433A59A5D3852C582EE121696D14AC /* Pods-DafuFruitUITests-frameworks.sh */,
+				D174CD63DAF209427C46965C6524870F /* Pods-DafuFruitUITests-resources.sh */,
+				90EC30D04AFC6FE8729DF63557DD594E /* Pods-DafuFruitUITests.debug.xcconfig */,
+				572EEBCC9BE82D904FC45EF1E8D50C1F /* Pods-DafuFruitUITests.release.xcconfig */,
+			);
+			name = "Pods-DafuFruitUITests";
+			path = "Target Support Files/Pods-DafuFruitUITests";
+			sourceTree = "<group>";
+		};
+		3AE32FD6C1CD512916DAE5C8A8C97EC4 /* Pods-DafuFruitTests */ = {
+			isa = PBXGroup;
+			children = (
+				71F229F3694887F2C112B18467DA5480 /* Pods-DafuFruitTests-acknowledgements.markdown */,
+				F72120FC69D73FD95BAD0F1FD602477F /* Pods-DafuFruitTests-acknowledgements.plist */,
+				034D27B39C7D0930706611F57247F145 /* Pods-DafuFruitTests-dummy.m */,
+				7D25DE59473F1661D3F7A1C158F19B49 /* Pods-DafuFruitTests-frameworks.sh */,
+				0997FB4ABB635DB0CD39849C3AB8A33E /* Pods-DafuFruitTests-resources.sh */,
+				F96817DA406B587B7398529A24FEEE98 /* Pods-DafuFruitTests.debug.xcconfig */,
+				1D5168487248A61FF109D1C7B29C8250 /* Pods-DafuFruitTests.release.xcconfig */,
+			);
+			name = "Pods-DafuFruitTests";
+			path = "Target Support Files/Pods-DafuFruitTests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				23AA2F3B8E6B39BE8D1EC945A7BC1A74 /* Pods */,
+				A45B3C8DB33D4A6E3E2B6466368DE6C9 /* Products */,
+				FBF8FC5FA9D24D48BC67567797E609F1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E58A232A398CCBC9E45849B5B80641A /* AVOSCloud */ = {
+			isa = PBXGroup;
+			children = (
+				61F7FAF68569DAD5363E8D0AA9E011A2 /* AVACL.h */,
+				85FED1A2CD27696755B3E10C74025EB0 /* AVAnalytics.h */,
+				4F146613C8B89D2A6BC3B5D4BD4A48B8 /* AVAnonymousUtils.h */,
+				0AB6A1EF150AA14E719DBF328E06AE4D /* AVAvailability.h */,
+				65B88645711C68FC802578C2A2398918 /* AVCloud.h */,
+				0E638A329920257C40CD3631B47D344F /* AVCloudQueryResult.h */,
+				2670BC7660DCD3E937541116B75975AF /* AVConstants.h */,
+				986F9F6E7C934C73521F6E4CE59DBD9A /* AVFile.h */,
+				90D6655641929CC8A8B095FF0D119D0F /* AVFileQuery.h */,
+				4FC90BC24FB2DC74BF0CC3F37FF7B47C /* AVGeoPoint.h */,
+				30DE17EEB8DA3D5D5ED196DF48D4C515 /* AVGroup.h */,
+				78BB741B16432F7844BE82F061B05E24 /* AVHistoryMessage.h */,
+				8D7603153447E4FAC306800697E1A063 /* AVHistoryMessageQuery.h */,
+				7171BFB2734311E6F9B11163D103FBF0 /* AVInstallation.h */,
+				7696392A7AE501FF9129909DE0CADA4A /* AVLogger.h */,
+				77251FD7EC85AC5D9727D841766FEC04 /* AVMessage.h */,
+				65AEFCC65FFD3A125159A5ADA375EC0C /* AVObject.h */,
+				819CDEB7832762BF5C9E9CF0FBC02DFB /* AVObject+Subclass.h */,
+				81ACC03114DAD5C35953AA9ED8C56904 /* AVOSCloud.h */,
+				AA0E093EDC64D9B133EAB074A0BBD6ED /* AVPush.h */,
+				88F8DA907B7F71586D22707C740F23CF /* AVQuery.h */,
+				20064E1E063A7A04476C8F3FAA6C6232 /* AVRelation.h */,
+				1E89B59B9E776E7A09E4A43E82C05E7F /* AVRole.h */,
+				9596AC55D686132791ADF8B84ACCF0ED /* AVSaveOption.h */,
+				1814A36317537428285212F7B4AD1211 /* AVSearchQuery.h */,
+				B487797E6212ACA16F785B107A681094 /* AVSearchSortBuilder.h */,
+				38AD3A1F35BE36BD168B99B941C7FBA4 /* AVSession.h */,
+				26D2609879A2BAC21E359EECBCE117AC /* AVSignature.h */,
+				995C1857E716E9F14E6EDD894D5562B7 /* AVStatus.h */,
+				E9A8C7AEAE92A6D70FB663372F99C218 /* AVSubclassing.h */,
+				2D264CDFE9C1187BE308F3E627138900 /* AVUser.h */,
+				E406645CEA514D2881DD1F558AEDA2C7 /* Frameworks */,
+			);
+			path = AVOSCloud;
+			sourceTree = "<group>";
+		};
+		9BA0CD689D4E638F9195B4651C864567 /* Pods-DafuFruit */ = {
+			isa = PBXGroup;
+			children = (
+				8098B909D069E4A656549575F3B9BEAE /* Pods-DafuFruit-acknowledgements.markdown */,
+				F1A110A1508D8B29B0AB660B980FD741 /* Pods-DafuFruit-acknowledgements.plist */,
+				7FFF7F1A7402F2AB6F0B4ED13178FBFB /* Pods-DafuFruit-dummy.m */,
+				6DA258606A4EECDD8B24107A8FE7F75C /* Pods-DafuFruit-frameworks.sh */,
+				C29ACB548F185739A519678A0313E595 /* Pods-DafuFruit-resources.sh */,
+				530CBFC2BBD6B96F4235CE2408A8141F /* Pods-DafuFruit.debug.xcconfig */,
+				5CA0C1AE303BBF4488F8AF545DFE5F22 /* Pods-DafuFruit.release.xcconfig */,
+			);
+			name = "Pods-DafuFruit";
+			path = "Target Support Files/Pods-DafuFruit";
+			sourceTree = "<group>";
+		};
+		A45B3C8DB33D4A6E3E2B6466368DE6C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36F59CD16C86F817A232460F9236CDEA /* libPods-DafuFruit.a */,
+				86B3465F9635C3C2E1B6A9CAD6841D5F /* libPods-DafuFruitTests.a */,
+				032820E280C653AFBD43B9D4B94B894D /* libPods-DafuFruitUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE47206A678EA4C98012FF47E100F77D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96CF8C3A5E82F582E48E0E8B5434240E /* libAVOSCloudCrashReporting.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E406645CEA514D2881DD1F558AEDA2C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8452C9C7D8FD61D1DCBFA65DE5B8E174 /* libAVOSCloud.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F830F56A808BCFFFB7E4D81E7128BAF8 /* AVOSCloudCrashReporting */ = {
+			isa = PBXGroup;
+			children = (
+				E9C32E3FDBF0401145B404B3219FCCE1 /* AVOSCloudCrashReporting.h */,
+				BE47206A678EA4C98012FF47E100F77D /* Frameworks */,
+			);
+			path = AVOSCloudCrashReporting;
+			sourceTree = "<group>";
+		};
+		FB4FD2FAEE9449466908FF0984DC17A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F9456598688E4052B1CCFA01201AEE4 /* libAVOSCloudIM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBF8FC5FA9D24D48BC67567797E609F1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA0CD689D4E638F9195B4651C864567 /* Pods-DafuFruit */,
+				3AE32FD6C1CD512916DAE5C8A8C97EC4 /* Pods-DafuFruitTests */,
+				2A80B7D4E37F00E186505AD846EDCB1C /* Pods-DafuFruitUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58E80657E8C6904600470B6DB59C4803 /* Pods-DafuFruit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BE69E4201945AC6D6A40998B0B8162 /* Build configuration list for PBXNativeTarget "Pods-DafuFruit" */;
+			buildPhases = (
+				8D269672525AB63AE21A1105FFF6CA29 /* Sources */,
+				DF7D7FEA21CDFAD3AD32E1CFD932068E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DafuFruit";
+			productName = "Pods-DafuFruit";
+			productReference = 36F59CD16C86F817A232460F9236CDEA /* libPods-DafuFruit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61DDB9612AF5BEA0B7F0D824F876DD27 /* Pods-DafuFruitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91D553A3A5495F725C637B28CFB23A44 /* Build configuration list for PBXNativeTarget "Pods-DafuFruitUITests" */;
+			buildPhases = (
+				2C85C32E2F454C38C25C1545134DF0DF /* Sources */,
+				A21A0765519799AD83FBF0C07E421C81 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DafuFruitUITests";
+			productName = "Pods-DafuFruitUITests";
+			productReference = 032820E280C653AFBD43B9D4B94B894D /* libPods-DafuFruitUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D185327D5ECAB066BDF0343F48010024 /* Pods-DafuFruitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFDA97F87FF67F9B5AFBCD28E5A60B8 /* Build configuration list for PBXNativeTarget "Pods-DafuFruitTests" */;
+			buildPhases = (
+				A4ED6945AF1459BD7AE28C512A3F6220 /* Sources */,
+				5D9980E271AEE74329B21EFB3E2E7537 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DafuFruitTests";
+			productName = "Pods-DafuFruitTests";
+			productReference = 86B3465F9635C3C2E1B6A9CAD6841D5F /* libPods-DafuFruitTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A45B3C8DB33D4A6E3E2B6466368DE6C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58E80657E8C6904600470B6DB59C4803 /* Pods-DafuFruit */,
+				D185327D5ECAB066BDF0343F48010024 /* Pods-DafuFruitTests */,
+				61DDB9612AF5BEA0B7F0D824F876DD27 /* Pods-DafuFruitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C85C32E2F454C38C25C1545134DF0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BF484D86156DCA70AFE2F6FDD0973B /* Pods-DafuFruitUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D269672525AB63AE21A1105FFF6CA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FF71A4B6AA0A396BE4C94BDCBBAAB0 /* Pods-DafuFruit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4ED6945AF1459BD7AE28C512A3F6220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC5DCCBB541FA4421FEDDB361E104E /* Pods-DafuFruitTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		39FE6998D162C32EDD202EED46CE78CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D5168487248A61FF109D1C7B29C8250 /* Pods-DafuFruitTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E25A66DA27287016AF95E0B1174EC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530CBFC2BBD6B96F4235CE2408A8141F /* Pods-DafuFruit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B51D34142BB393B2152A8B44C9CE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96817DA406B587B7398529A24FEEE98 /* Pods-DafuFruitTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB52D62E9C67F24737917331CD31595F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA0C1AE303BBF4488F8AF545DFE5F22 /* Pods-DafuFruit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BB480EC29BE8AF1A840267F8136C7B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572EEBCC9BE82D904FC45EF1E8D50C1F /* Pods-DafuFruitUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E56E9875123E3966ADCE7624380B2B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EC30D04AFC6FE8729DF63557DD594E /* Pods-DafuFruitUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29BE69E4201945AC6D6A40998B0B8162 /* Build configuration list for PBXNativeTarget "Pods-DafuFruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E25A66DA27287016AF95E0B1174EC7F /* Debug */,
+				AB52D62E9C67F24737917331CD31595F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFDA97F87FF67F9B5AFBCD28E5A60B8 /* Build configuration list for PBXNativeTarget "Pods-DafuFruitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B51D34142BB393B2152A8B44C9CE55E /* Debug */,
+				39FE6998D162C32EDD202EED46CE78CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91D553A3A5495F725C637B28CFB23A44 /* Build configuration list for PBXNativeTarget "Pods-DafuFruitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E56E9875123E3966ADCE7624380B2B07 /* Debug */,
+				BB480EC29BE8AF1A840267F8136C7B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
