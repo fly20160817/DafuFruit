@@ -18,12 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    /***********************  服务器连接 ******************/
     // 如果使用美国站点，请加上下面这行代码：
     // [AVOSCloud setServiceRegion:AVServiceRegionUS];
     
     [AVOSCloud setApplicationId:@"TsCmo0VQN8QpXUnHJUB4GMLB-gzGzoHsz" clientKey:@"DP2uvzyNbjvkPcJ68NieNI9d"];
-    
+    /*************************************************/
     
     // Override point for customization after application launch.
     return YES;
