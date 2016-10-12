@@ -22,6 +22,7 @@
 		84F0EAD81DACD08400D31CA9 /* DafuFruitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAD71DACD08400D31CA9 /* DafuFruitUITests.m */; };
 		88ED1574C564C1BFEE01846C /* libPods-DafuFruitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90D90230BDDEC4D6F2A96B6 /* libPods-DafuFruitTests.a */; };
 		BC83EAE9332290E0939E7291 /* libPods-DafuFruitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E49D093200139266C1661369 /* libPods-DafuFruitUITests.a */; };
+		C6BE19D91DADC9BC00A7B477 /* FDL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BE19D81DADC9BC00A7B477 /* FDL.storyboard */; };
 		D70D17B8B11F17333A4E494D /* libPods-DafuFruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDF64DB00EDEEE638FD3FC3 /* libPods-DafuFruit.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		84F0EAD91DACD08400D31CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDF5D2C962717236EA690A0A /* Pods-DafuFruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitUITests/Pods-DafuFruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C36E778CCDAC14AB5EF93405 /* Pods-DafuFruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitTests/Pods-DafuFruitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6BE19D81DADC9BC00A7B477 /* FDL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FDL.storyboard; sourceTree = "<group>"; };
 		C90D90230BDDEC4D6F2A96B6 /* libPods-DafuFruitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D049475E0815D09E3FFC3CA0 /* Pods-DafuFruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitTests/Pods-DafuFruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E49D093200139266C1661369 /* libPods-DafuFruitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 		84F0EAAE1DACD08400D31CA9 /* DafuFruit */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				84F0EAB21DACD08400D31CA9 /* AppDelegate.h */,
 				84F0EAB31DACD08400D31CA9 /* AppDelegate.m */,
 				84F0EAB51DACD08400D31CA9 /* ViewController.h */,
@@ -147,6 +150,12 @@
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				84F0EAC31DACD08400D31CA9 /* Info.plist */,
 				84F0EABB1DACD08400D31CA9 /* DafuFruit.xcdatamodeld */,
+=======
+				C6BE19D71DADC98F00A7B477 /* Controller */,
+				C6BE19D61DADC98500A7B477 /* View */,
+				C6BE19D51DADC97900A7B477 /* Model */,
+				C6BE19D41DADC96F00A7B477 /* 3rd */,
+>>>>>>> 766a674f3a5d6bdd47889a59d293004d88f18e6f
 				84F0EAAF1DACD08400D31CA9 /* Supporting Files */,
 			);
 			path = DafuFruit;
@@ -155,6 +164,10 @@
 		84F0EAAF1DACD08400D31CA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84F0EAB21DACD08400D31CA9 /* AppDelegate.h */,
+				84F0EAB31DACD08400D31CA9 /* AppDelegate.m */,
+				84F0EAB81DACD08400D31CA9 /* Main.storyboard */,
+				84F0EAC31DACD08400D31CA9 /* Info.plist */,
 				84F0EAB01DACD08400D31CA9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -199,6 +212,40 @@
 				822026A90E3CC3A8D1C04779 /* Pods-DafuFruitUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6BE19D41DADC96F00A7B477 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		C6BE19D51DADC97900A7B477 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F0EABB1DACD08400D31CA9 /* DafuFruit.xcdatamodeld */,
+				84F0EABE1DACD08400D31CA9 /* Assets.xcassets */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C6BE19D61DADC98500A7B477 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
+				C6BE19D81DADC9BC00A7B477 /* FDL.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C6BE19D71DADC98F00A7B477 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F0EAB61DACD08400D31CA9 /* ViewController.m */,
+				84F0EAB51DACD08400D31CA9 /* ViewController.h */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +363,7 @@
 				84F0EABF1DACD08400D31CA9 /* Assets.xcassets in Resources */,
 				84C8A0261DADCF5B000E5D85 /* Wjt.storyboard in Resources */,
 				84F0EABA1DACD08400D31CA9 /* Main.storyboard in Resources */,
+				C6BE19D91DADC9BC00A7B477 /* FDL.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
