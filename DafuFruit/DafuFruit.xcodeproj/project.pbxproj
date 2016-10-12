@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C8A0311DADE674000E5D85 /* CALayer+ff.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8A02B1DADE674000E5D85 /* CALayer+ff.m */; };
+		84C8A0321DADE674000E5D85 /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8A02D1DADE674000E5D85 /* LonginViewController.m */; };
+		84C8A0331DADE674000E5D85 /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8A02F1DADE674000E5D85 /* RegironViewController.m */; };
+		84C8A0341DADE674000E5D85 /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C8A0301DADE674000E5D85 /* Wjt.storyboard */; };
 		84F0EAB11DACD08400D31CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB01DACD08400D31CA9 /* main.m */; };
 		84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB31DACD08400D31CA9 /* AppDelegate.m */; };
 		84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB61DACD08400D31CA9 /* ViewController.m */; };
@@ -45,6 +49,13 @@
 		4B3BE566FECA2BB037A8CD62 /* Pods-DafuFruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruit/Pods-DafuFruit.release.xcconfig"; sourceTree = "<group>"; };
 		75E66FDF30A9120556D0507F /* Pods-DafuFruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruit/Pods-DafuFruit.debug.xcconfig"; sourceTree = "<group>"; };
 		822026A90E3CC3A8D1C04779 /* Pods-DafuFruitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitUITests/Pods-DafuFruitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84C8A02A1DADE674000E5D85 /* CALayer+ff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ff.h"; sourceTree = "<group>"; };
+		84C8A02B1DADE674000E5D85 /* CALayer+ff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ff.m"; sourceTree = "<group>"; };
+		84C8A02C1DADE674000E5D85 /* LonginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonginViewController.h; sourceTree = "<group>"; };
+		84C8A02D1DADE674000E5D85 /* LonginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonginViewController.m; sourceTree = "<group>"; };
+		84C8A02E1DADE674000E5D85 /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
+		84C8A02F1DADE674000E5D85 /* RegironViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegironViewController.m; sourceTree = "<group>"; };
+		84C8A0301DADE674000E5D85 /* Wjt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wjt.storyboard; sourceTree = "<group>"; };
 		84F0EAAC1DACD08400D31CA9 /* DafuFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DafuFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0EAB01DACD08400D31CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F0EAB21DACD08400D31CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,6 +223,7 @@
 		C6BE19D61DADC98500A7B477 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84C8A0301DADE674000E5D85 /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				C6BE19D81DADC9BC00A7B477 /* FDL.storyboard */,
 			);
@@ -225,6 +237,12 @@
 				84F0EAB51DACD08400D31CA9 /* ViewController.h */,
 				C6BE19E41DADD14F00A7B477 /* HomeTableViewController.h */,
 				C6BE19E51DADD14F00A7B477 /* HomeTableViewController.m */,
+				84C8A02A1DADE674000E5D85 /* CALayer+ff.h */,
+				84C8A02B1DADE674000E5D85 /* CALayer+ff.m */,
+				84C8A02C1DADE674000E5D85 /* LonginViewController.h */,
+				84C8A02D1DADE674000E5D85 /* LonginViewController.m */,
+				84C8A02E1DADE674000E5D85 /* RegironViewController.h */,
+				84C8A02F1DADE674000E5D85 /* RegironViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -353,6 +371,7 @@
 				84F0EABF1DACD08400D31CA9 /* Assets.xcassets in Resources */,
 				84F0EABA1DACD08400D31CA9 /* Main.storyboard in Resources */,
 				C6BE19D91DADC9BC00A7B477 /* FDL.storyboard in Resources */,
+				84C8A0341DADE674000E5D85 /* Wjt.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,10 +521,13 @@
 			files = (
 				C6BE19E31DADD08600A7B477 /* Utilities.m in Sources */,
 				84F0EABD1DACD08400D31CA9 /* DafuFruit.xcdatamodeld in Sources */,
+				84C8A0311DADE674000E5D85 /* CALayer+ff.m in Sources */,
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
+				84C8A0331DADE674000E5D85 /* RegironViewController.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
+				84C8A0321DADE674000E5D85 /* LonginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
