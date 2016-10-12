@@ -17,12 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    /***************      服务器测试    ***************/
     AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
     [testObject save];
-    /************************************************/
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }
