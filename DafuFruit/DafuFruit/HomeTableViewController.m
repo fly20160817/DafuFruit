@@ -11,6 +11,11 @@
 @interface HomeTableViewController ()<CLLocationManagerDelegate>{
     CLLocation *location;
     NSInteger locVisit;
+    NSInteger page;
+    NSInteger perPage;
+    NSInteger totalPage;
+    BOOL loading;
+
 }
 @property (strong, nonatomic) CLLocationManager *locationManager;//定位器
 @end
@@ -111,6 +116,64 @@
         }];
         [_locationManager stopUpdatingLocation];
     });
+}
+
+- (void)networkRequest {
+    /*
+    NSString *request = @"/homepage/choice";
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{@"page" : @(page), @"perPage" : @(perPage)}];
+    if (![[Utilities getUserDefaults:@"UserLatitude"] isKindOfClass:[NSNull class]] && ![[Utilities getUserDefaults:@"UserLongitude"] isKindOfClass:[NSNull class]] && [Utilities getUserDefaults:@"UserLatitude"] != nil && [Utilities getUserDefaults:@"UserLongitude"] != nil) {
+        [parameters setObject:[Utilities getUserDefaults:@"UserLongitude"] forKey:@"jing"];
+        [parameters setObject:[Utilities getUserDefaults:@"UserLatitude"] forKey:@"wei"];
+    }
+    if (![[Utilities getUserDefaults:@"UserCity"] isKindOfClass:[NSNull class]] && [Utilities getUserDefaults:@"UserCity"] != nil) {
+        [parameters setObject:[Utilities getUserDefaults:@"UserCity"] forKey:@"city"];
+    } else {
+        [parameters setObject:@"无锡" forKey:@"city"];
+    }
+    
+    NSLog(@"request = %@", request);
+    NSLog(@"parameters = %@", parameters);
+    [RequestAPI getURL:request withParameters:parameters success:^(id responseObject) {
+        loading = NO;
+        [_aiv stopAnimating];
+        [self endRefreshing];
+        NSLog(@"responseObject = %@", responseObject);
+        if ([responseObject[@"resultFlag"] integerValue] == 8001) {
+            NSArray *adArr = responseObject[@"advertisement"];
+            NSDictionary *result = responseObject[@"result"];
+            NSArray *clubArr = result[@"models"];
+            NSDictionary *pageInfo = result[@"pagingInfo"];
+            
+            if (page == 1) {
+                [_advertisments removeAllObjects];
+                for (NSDictionary *adDic in adArr) {
+                    Advertisement *advertisment = [[Advertisement alloc] initWithDictionary:adDic];
+                    [_advertisments addObject:advertisment];
+                }
+                [self tableHeaderLayout];
+                [_clubs removeAllObjects];
+            }
+            
+            for (NSDictionary *clubDic in clubArr) {
+                Club *club = [[Club alloc] initWithDictionary:clubDic];
+                [_clubs addObject:club];
+            }
+            
+            [self.tableView reloadData];
+            totalPage = [pageInfo[@"totalPage"] integerValue];
+        } else {
+            NSString *errorDesc = [ErrorHandler getProperErrorString:[responseObject[@"resultFlag"] integerValue]];
+            [Utilities popUpAlertViewWithMsg:errorDesc andTitle:nil onView:self];
+        }
+    } failure:^(NSError *error) {
+        loading = NO;
+        [_aiv stopAnimating];
+        [self endRefreshing];
+        NSLog(@"error = %@", error.description);
+        [Utilities popUpAlertViewWithMsg:NSLocalizedString(@"NetworkError", nil) andTitle:nil onView:self];
+    }];
+     */
 }
 
 
