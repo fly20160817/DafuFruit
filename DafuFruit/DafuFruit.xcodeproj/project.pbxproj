@@ -22,6 +22,7 @@
 		84F0EAD81DACD08400D31CA9 /* DafuFruitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAD71DACD08400D31CA9 /* DafuFruitUITests.m */; };
 		88ED1574C564C1BFEE01846C /* libPods-DafuFruitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90D90230BDDEC4D6F2A96B6 /* libPods-DafuFruitTests.a */; };
 		BC83EAE9332290E0939E7291 /* libPods-DafuFruitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E49D093200139266C1661369 /* libPods-DafuFruitUITests.a */; };
+		C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68C06791DB0E13900945FAA /* TabViewController.m */; };
 		C6BE19E31DADD08600A7B477 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE19E21DADD08600A7B477 /* Utilities.m */; };
 		C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE19E51DADD14F00A7B477 /* HomeTableViewController.m */; };
 		C6E032361DB0D5060012677C /* FDL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E032351DB0D5060012677C /* FDL.storyboard */; };
@@ -75,6 +76,8 @@
 		84F0EAD91DACD08400D31CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDF5D2C962717236EA690A0A /* Pods-DafuFruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitUITests/Pods-DafuFruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C36E778CCDAC14AB5EF93405 /* Pods-DafuFruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitTests/Pods-DafuFruitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C68C06781DB0E13900945FAA /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		C68C06791DB0E13900945FAA /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 		C6BE19E11DADD08600A7B477 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		C6BE19E21DADD08600A7B477 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		C6BE19E41DADD14F00A7B477 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 		C6BE19D71DADC98F00A7B477 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C68C06781DB0E13900945FAA /* TabViewController.h */,
+				C68C06791DB0E13900945FAA /* TabViewController.m */,
 				84F0EAB61DACD08400D31CA9 /* ViewController.m */,
 				84F0EAB51DACD08400D31CA9 /* ViewController.h */,
 				C6BE19E41DADD14F00A7B477 /* HomeTableViewController.h */,
@@ -523,6 +528,7 @@
 				84F0EABD1DACD08400D31CA9 /* DafuFruit.xcdatamodeld in Sources */,
 				84C8A0311DADE674000E5D85 /* CALayer+ff.m in Sources */,
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
+				C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */,
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
 				84C8A0331DADE674000E5D85 /* RegironViewController.m in Sources */,
