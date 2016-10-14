@@ -17,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [_window makeKeyAndVisible];
+    UIStoryboard *FDL = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    _window.rootViewController = [FDL instantiateViewControllerWithIdentifier:@"Tab"];
     
     // 如果使用美国站点，请加上下面这行代码：
     // [AVOSCloud setServiceRegion:AVServiceRegionUS];

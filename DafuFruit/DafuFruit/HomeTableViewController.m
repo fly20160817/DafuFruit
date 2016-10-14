@@ -9,7 +9,6 @@
 #import "HomeTableViewController.h"
 #import <CoreLocation/CoreLocation.h>
 @interface HomeTableViewController ()<CLLocationManagerDelegate>
-
 @property (strong, nonatomic) CLLocationManager *locationManager;//定位器
 @end
 
@@ -128,6 +127,11 @@
     }];
     
 }
+
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//        UIView *
+//}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
