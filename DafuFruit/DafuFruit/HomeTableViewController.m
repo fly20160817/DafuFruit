@@ -8,7 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import <CoreLocation/CoreLocation.h>
-@interface HomeTableViewController ()<CLLocationManagerDelegate>
+@interface HomeTableViewController ()<CLLocationManagerDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;//定位器
 @end
 
@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"水果滴滴鲜";
+    self.navigationItem.title = @"滴滴鲜";
+    [self setHeaderView];
     [self locationConfiguration];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -129,9 +130,13 @@
     
 }
 
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//        UIView *
-//}
+-(void)setHeaderView{
+    UIScrollView *scrollView =[[UIScrollView alloc] init];
+    scrollView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [self.tableView addSubview:scrollView];
+    [scrollView setContentSize:CGSizeMake(self.view.frame.size.width * 3, self.view.frame.size.height)];
+    self.tableView.tableHeaderView = scrollView;
+}
 
 #pragma mark - Table view data source
 
