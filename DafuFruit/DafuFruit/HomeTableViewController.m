@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"滴滴鲜";
+    self.navigationItem.title = @"水果滴滴鲜";
     [self setHeaderView];
     [self locationConfiguration];
     // Uncomment the following line to preserve selection between presentations.
@@ -140,10 +140,12 @@
 
 -(void)setHeaderView{
     UIScrollView *scrollView =[[UIScrollView alloc] init];
-    self.scrollView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    [self.tableView addSubview:scrollView];
+    CGFloat width = self.view.frame.size.width;
+    CGFloat height = self.view.frame.size.width/8*3;
+    scrollView.frame = CGRectMake(0, 0, width, height);
+    [self.view addSubview:scrollView];
     self.scrollView = scrollView;
-    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width * 3, self.view.frame.size.height)];
+    [self.scrollView setContentSize:CGSizeMake(width * 3, height)];
     //  设置隐藏横向条
     self.scrollView.showsHorizontalScrollIndicator = NO;
     //  设置自动分页
@@ -151,7 +153,7 @@
     //  设置代理
     self.scrollView.delegate = self;
     //  设置当前点
-    self.scrollView.contentOffset = CGPointMake(self.view.frame.size.width, 0);
+    self.scrollView.contentOffset = CGPointMake(width, 0);
     //  设置是否有边界
     self.scrollView.bounces = NO;
     //  初始化当前视图
@@ -159,28 +161,30 @@
     currentImageView.image = [UIImage imageNamed:@"1.jpg"];
     [self.scrollView addSubview:currentImageView];
     self.currentImageView = currentImageView;
-    self.currentImageView.frame = CGRectMake(self.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.width);
+    self.currentImageView.frame = CGRectMake(width, 0, width, height);
     self.currentImageView.contentMode = UIViewContentModeScaleAspectFill;
     //  初始化下一个视图
     UIImageView *nextImageView = [[UIImageView alloc] init];
     nextImageView.image = [UIImage imageNamed:@"2.jpg"];
     [self.scrollView addSubview:nextImageView];
     self.nextImageView = nextImageView;
-    self.nextImageView.frame = CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.height);
+    self.nextImageView.frame = CGRectMake(width * 2, 0, width, height);
     self.nextImageView.contentMode = UIViewContentModeScaleAspectFill;
     //  初始化上一个视图
     UIImageView *preImageView =[[UIImageView alloc] init];
     preImageView.image = [UIImage imageNamed:@"3.jpg"];
-    preImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    preImageView.frame = CGRectMake(0, 0, width, height);
     [self.scrollView addSubview:preImageView];
     self.preImageView = preImageView;
     self.preImageView.contentMode =UIViewContentModeScaleAspectFill;
     
     //  设置时钟动画 定时器
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(update:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(update:) userInfo:nil repeats:YES];
     //  将定时器添加到主线程
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    
+
     self.tableView.tableHeaderView = self.scrollView;
 }
 
