@@ -10,6 +10,16 @@
 
 @interface LonginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *psd;
+
+- (IBAction)regionOne:(UIButton *)sender forEvent:(UIEvent *)event;
+
+- (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event;
+
+- (IBAction)forgotPsd:(UIButton *)sender forEvent:(UIEvent *)event;
+
 @end
 
 @implementation LonginViewController
@@ -34,4 +44,12 @@
 }
 */
 
+- (IBAction)regionOne:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+
+- (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+
+- (IBAction)forgotPsd:(UIButton *)sender forEvent:(UIEvent *)event {
+}
 @end
