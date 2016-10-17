@@ -11,6 +11,7 @@
 		8481704A1DB4A98E005B2980 /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848170471DB4A98E005B2980 /* LonginViewController.m */; };
 		8481704B1DB4A98E005B2980 /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848170491DB4A98E005B2980 /* RegironViewController.m */; };
 		8481704D1DB4A995005B2980 /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481704C1DB4A995005B2980 /* Wjt.storyboard */; };
+		848170531DB4BBF7005B2980 /* DGTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848170521DB4BBF7005B2980 /* DGTimerButton.m */; };
 		84C8A0311DADE674000E5D85 /* CALayer+ff.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8A02B1DADE674000E5D85 /* CALayer+ff.m */; };
 		84F0EAB11DACD08400D31CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB01DACD08400D31CA9 /* main.m */; };
 		84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB31DACD08400D31CA9 /* AppDelegate.m */; };
@@ -58,6 +59,8 @@
 		848170481DB4A98E005B2980 /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
 		848170491DB4A98E005B2980 /* RegironViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegironViewController.m; sourceTree = "<group>"; };
 		8481704C1DB4A995005B2980 /* Wjt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wjt.storyboard; sourceTree = "<group>"; };
+		848170511DB4BBF7005B2980 /* DGTimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGTimerButton.h; sourceTree = "<group>"; };
+		848170521DB4BBF7005B2980 /* DGTimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGTimerButton.m; sourceTree = "<group>"; };
 		84C8A02A1DADE674000E5D85 /* CALayer+ff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ff.h"; sourceTree = "<group>"; };
 		84C8A02B1DADE674000E5D85 /* CALayer+ff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ff.m"; sourceTree = "<group>"; };
 		84F0EAAC1DACD08400D31CA9 /* DafuFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DafuFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +253,8 @@
 				C6BE19E51DADD14F00A7B477 /* HomeTableViewController.m */,
 				84C8A02A1DADE674000E5D85 /* CALayer+ff.h */,
 				84C8A02B1DADE674000E5D85 /* CALayer+ff.m */,
+				848170511DB4BBF7005B2980 /* DGTimerButton.h */,
+				848170521DB4BBF7005B2980 /* DGTimerButton.m */,
 				C6785F491DB4988700C39C2A /* PersonTableViewController.h */,
 				C6785F4A1DB4988700C39C2A /* PersonTableViewController.m */,
 				848170461DB4A98E005B2980 /* LonginViewController.h */,
@@ -539,6 +544,7 @@
 				C6785F4B1DB4988700C39C2A /* PersonTableViewController.m in Sources */,
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
 				C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */,
+				848170531DB4BBF7005B2980 /* DGTimerButton.m in Sources */,
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				8481704A1DB4A98E005B2980 /* LonginViewController.m in Sources */,
 				8481704B1DB4A98E005B2980 /* RegironViewController.m in Sources */,
