@@ -18,8 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UINavigationController *HomeNC = [[UINavigationController alloc]initWithRootViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Home"] ];
-    HomeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"滴滴鲜" image:[UIImage imageNamed:@"apple"] tag:0];
-    self.viewControllers = @[HomeNC];
+    HomeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"滴滴鲜" image:[UIImage imageNamed:@"lemon"] tag:0];
+    UINavigationController *PersonNC = [[UINavigationController alloc]initWithRootViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Person"] ];
+    PersonNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"尝鲜人" image:[UIImage imageNamed:@"person"] tag:0];
+    
+    
+    self.viewControllers = @[HomeNC, PersonNC];
 
 }
 
