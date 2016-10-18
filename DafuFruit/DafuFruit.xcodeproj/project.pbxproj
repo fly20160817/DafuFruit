@@ -12,6 +12,7 @@
 		8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FE851DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m */; };
 		8468FE881DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE871DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard */; };
 		8468FE8C1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */; };
+		8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */; };
 		84F0EAB11DACD08400D31CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB01DACD08400D31CA9 /* main.m */; };
 		84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB31DACD08400D31CA9 /* AppDelegate.m */; };
 		84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB61DACD08400D31CA9 /* ViewController.m */; };
@@ -64,6 +65,8 @@
 		8468FE851DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLoginBeforeViewController.m; sourceTree = "<group>"; };
 		8468FE871DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LFOrderLoginBefore.storyboard; sourceTree = "<group>"; };
 		8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LFOrderLoginAfterward.storyboard; sourceTree = "<group>"; };
+		8468FE8D1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderLoginAfterwardTableViewCell.h; sourceTree = "<group>"; };
+		8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLoginAfterwardTableViewCell.m; sourceTree = "<group>"; };
 		84F0EAAC1DACD08400D31CA9 /* DafuFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DafuFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0EAB01DACD08400D31CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F0EAB21DACD08400D31CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				8468FE851DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m */,
 				8468FE811DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.h */,
 				8468FE821DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.m */,
+				8468FE8D1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.h */,
+				8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */,
 				84F402C41DB60012004BEDF8 /* DGTimerButton.h */,
 				84F402C51DB60012004BEDF8 /* DGTimerButton.m */,
 				84F402BC1DB5FFDE004BEDF8 /* LonginViewController.h */,
@@ -568,6 +573,7 @@
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
 				8468FE831DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.m in Sources */,
+				8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */,
 				8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
 			);

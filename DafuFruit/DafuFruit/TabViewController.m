@@ -21,7 +21,8 @@
     HomeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"滴滴鲜" image:[UIImage imageNamed:@"lemon"] tag:0];
     UINavigationController *PersonNC = [[UINavigationController alloc]initWithRootViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Person"] ];
     PersonNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"尝鲜人" image:[UIImage imageNamed:@"person"] tag:0];
-    UINavigationController *OBLNC = [[UINavigationController alloc]initWithRootViewController:[[UIStoryboard storyboardWithName:@"LFOrderLoginBefore" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"OLB"] ];
+    
+    UINavigationController *OBLNC = [[UINavigationController alloc]initWithRootViewController:[[UIStoryboard storyboardWithName:@"LFOrderLoginAfterward" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"LFOrderLoginAfter"] ];
     OBLNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"果单" image:[UIImage imageNamed:@"订单Bar"] tag:0];
 
     self.viewControllers = @[HomeNC, OBLNC, PersonNC];
