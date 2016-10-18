@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="S9D-jy-jY9">
+            <objects>
+                <tabBarController id="ZEW-tc-iNQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZdY-8g-PVK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e4e-3W-use" kind="relationship" relationship="viewControllers" id="yq5-2e-r2r"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPR-pY-XZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="-57"/>
+        </scene>
+        <!--果单-->
+        <scene sceneID="YJZ-ii-c2q">
+            <objects>
+                <viewController id="gmu-bK-t8u" customClass="OrderLoginBeforeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jrf-eE-FKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDC-X8-oa9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBu-sF-5Qq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="菠萝" translatesAutoresizingMaskIntoConstraints="NO" id="7jM-3G-ZtI">
+                                <rect key="frame" x="263" y="229" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="feB-cF-0dw"/>
+                                    <constraint firstAttribute="width" constant="75" id="hTb-cg-p6o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录后查看果单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-Bg-Zyc">
+                                <rect key="frame" x="241" y="324" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-vJ-n1M">
+                                <rect key="frame" x="262" y="375" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.89019607840000003" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="  立即登录  ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7jM-3G-ZtI" firstAttribute="centerX" secondItem="fBu-sF-5Qq" secondAttribute="centerX" id="8Ys-JR-QDf"/>
+                            <constraint firstItem="Ngw-Bg-Zyc" firstAttribute="top" secondItem="7jM-3G-ZtI" secondAttribute="bottom" constant="20" id="YaE-fX-zqv"/>
+                            <constraint firstItem="rPH-vJ-n1M" firstAttribute="top" secondItem="Ngw-Bg-Zyc" secondAttribute="bottom" constant="30" id="cAo-4s-3vM"/>
+                            <constraint firstItem="7jM-3G-ZtI" firstAttribute="top" secondItem="Jrf-eE-FKL" secondAttribute="bottom" constant="165" id="k9Z-ab-nDw"/>
+                            <constraint firstItem="rPH-vJ-n1M" firstAttribute="centerX" secondItem="fBu-sF-5Qq" secondAttribute="centerX" id="v2s-JE-y6l"/>
+                            <constraint firstItem="Ngw-Bg-Zyc" firstAttribute="centerX" secondItem="fBu-sF-5Qq" secondAttribute="centerX" id="wLd-Ep-4Se"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="果单" id="1Uh-aj-7yu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ftb-Fk-hTU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="-84"/>
+        </scene>
+        <!--订单-->
+        <scene sceneID="dci-ZC-1kV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e4e-3W-use" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="订单" image="订单Bar" id="eiX-ev-a9X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hyl-i7-EJa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gmu-bK-t8u" kind="relationship" relationship="rootViewController" id="Enf-9D-74X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqX-hJ-Iew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="-52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="菠萝" width="400" height="384"/>
+        <image name="订单Bar" width="16" height="16"/>
+    </resources>
+</document>
