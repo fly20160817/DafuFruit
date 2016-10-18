@@ -27,6 +27,7 @@
 
     self.viewControllers = @[HomeNC, OBLNC, PersonNC];
 
+    //test
 }
 
 - (void)didReceiveMemoryWarning {
