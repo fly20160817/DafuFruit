@@ -7,8 +7,12 @@
 //
 
 #import "OrderLoginAfterwardViewController.h"
+#import "OrderLoginAfterwardsTableViewCell.h"
 
 @interface OrderLoginAfterwardViewController ()
+
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -33,5 +37,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+//行数
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 5;
+}
+
+
+//处理每个细胞显示的具体内容
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    OrderLoginAfterwardsTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Order" forIndexPath:indexPath];
+    
+    return cell;
+    
+}
 
 @end
