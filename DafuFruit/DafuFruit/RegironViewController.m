@@ -7,16 +7,53 @@
 //
 
 #import "RegironViewController.h"
+#import "DGTimerButton.h"
 
 @interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
+
 
 @end
 
 @implementation RegironViewController
-
+{
+    DGTimerButton *bu;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    bu = [DGTimerButton buttonWithType:UIButtonTypeCustom];
+    bu.titleLabel.font = [UIFont systemFontOfSize: 12.0];
+    [bu setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [bu setTitle:@"获取验证码" forState:UIControlStateNormal];
+    
+    //[bu setBackgroundColor:[UIColor redColor]];
+    [bu.layer setCornerRadius:12.0];
+    [bu.layer setBorderWidth:1.0];
+    bu.layer.borderColor=[UIColor orangeColor].CGColor;
+    [bu addTarget:self action:@selector(beginTimer) forControlEvents:UIControlEventTouchUpInside];
+    [bu setFrame:CGRectMake(325, 275, 76, 31)];
+    //bu.formatStr=@"还剩%zd秒了";
+    [bu setDGTimerButtonWithDuration:60
+                         runingColor:[UIColor whiteColor]                                               runingTextColor:[UIColor orangeColor]
+                       runingImgName:nil
+                           formatStr:@"剩余 %zd 秒"
+                            buStatus:^(BUStatus status) {
+                                
+                                if (status==BUStatusRuning) {
+                                    //计时中
+                                }else if (status==BUStatusCancel){
+                                    //结束了（手动结束了，没有超时）
+                                }else if (status==BUStatusFinish){
+                                    //计时结束了 超时了
+                                }
+                                
+                            }];
+    [self.view addSubview:bu];
+}
+
+-(void)beginTimer{
+    [bu beginTimers];
 }
 
 -(UIColor *)color {
@@ -78,4 +115,6 @@
 }
 */
 
+- (IBAction)remain:(UIButton *)sender forEvent:(UIEvent *)event {
+}
 @end
