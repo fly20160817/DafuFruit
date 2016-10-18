@@ -7,7 +7,8 @@
 //
 
 #import "PersonTableViewController.h"
-#import "PersonTableViewCell.h"
+#import "PeopleTableViewCell.h"
+#import "FunctionTableViewCell.h"
 @interface PersonTableViewController ()
 
 
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"尝鲜人";
+    //去除多余的线
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    //隐藏导航栏下面的线
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     //设置导航条背景色
     //self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
     // Uncomment the following line to preserve selection between presentations.
@@ -35,25 +41,56 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 1;
+
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 1;
+    if (section == 0) {
+        return 1;
+    }else {
+        return 10;
+    }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        return self.view.frame.size.height / 5;
+    }else
+        return 50;
+    
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-     PersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    
-    // Configure the cell...
-    
-    return cell;
+    if (indexPath.section == 0) {
+        PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
+        return cell;
+    }else {
+        FunctionTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellFunction" forIndexPath:indexPath];
+        switch (indexPath.row) {
+            case 0:
+                cell.functionImgView.image =[UIImage imageNamed:@"address"];
+                cell.functionLbl.text = @"尝鲜人的地址";
+                break;
+            case 1:
+                cell.functionLbl.text = @"尝鲜人的收藏";
+                break;
+            case 2:
+                cell.functionLbl.text = @"尝鲜人的评价";
+                break;
+                
+            default:
+                break;
+        }
+        return cell;
+    }
+
 }
 
+//摸了后做的事情
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
+}
 
 /*
 // Override to support conditional editing of the table view.
