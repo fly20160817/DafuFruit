@@ -45,14 +45,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
         return 1;
-    }else {
-        return 10;
+    }else if (section == 1){
+        return 3;
+    }else{
+        return 5;
     }
 }
 
@@ -64,12 +66,17 @@
     
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 10;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
         return cell;
-    }else {
+    }else{
         FunctionTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellFunction" forIndexPath:indexPath];
+        if (indexPath.section == 1) {
         switch (indexPath.row) {
             case 0:
                 cell.functionImgView.image =[UIImage imageNamed:@"address"];
@@ -83,15 +90,22 @@
                 cell.functionImgView.image =[UIImage imageNamed:@"评价"];
                 cell.functionLbl.text = @"尝鲜人的评价";
                 break;
-            case 3:
-                cell.functionImgView.image =[UIImage imageNamed:@"提篮"];
-                cell.functionLbl.text = @"提篮换箩筐";
-                cell.subtitleLbl.text = @"鲜果0元购";
-                break;
-            
                 
             default:
                 break;
+            }
+        }else{
+            switch (indexPath.row) {
+                case 0:
+                    cell.functionImgView.image =[UIImage imageNamed:@"提篮"];
+                    cell.functionLbl.text = @"提篮换箩筐";
+                    cell.subtitleLbl.text = @"鲜果0元购";
+                    break;
+                    
+                default:
+                    break;
+            }
+
         }
         return cell;
     }
