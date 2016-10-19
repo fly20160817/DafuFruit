@@ -25,6 +25,7 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:65/255.0 green:227/255.0 blue:65/255.0 alpha:1];
     //取消导航栏毛玻璃特效
     self.navigationController.navigationBar.translucent = NO;
+    
     //隐藏导航栏下面的线
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
@@ -45,7 +46,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -53,9 +54,10 @@
         return 1;
     }else if (section == 1){
         return 3;
-    }else{
-        return 5;
-    }
+    }else if (section == 2){
+        return 1;
+    }else
+        return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -73,6 +75,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
+        //将头像按钮设置为圆形
+        cell.avanterImageView.layer.cornerRadius = self.view.frame.size.height / 10 - 20;
+        //给头像按钮添加一圈黑边
+        cell.avanterImageView.layer.borderWidth = 1;//边框宽度5
+        //将多余部分剪裁掉
+        cell.avanterImageView.clipsToBounds = YES;
         return cell;
     }else{
         FunctionTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellFunction" forIndexPath:indexPath];
@@ -94,7 +102,7 @@
             default:
                 break;
             }
-        }else{
+        }else if(indexPath.section == 2){
             switch (indexPath.row) {
                 case 0:
                     cell.functionImgView.image =[UIImage imageNamed:@"提篮"];
@@ -106,7 +114,20 @@
                     break;
             }
 
-        }
+        }else
+            switch (indexPath.row) {
+                case 0:
+                    cell.functionImgView.image =[UIImage imageNamed:@"常见问题"];
+                    cell.functionLbl.text = @"常见问题";
+                    break;
+                case 1:
+                    cell.functionImgView.image =[UIImage imageNamed:@"联系客服"];
+                    cell.functionLbl.text = @"联系我们";
+                    break;
+                    
+                default:
+                    break;
+            }
         return cell;
     }
 
