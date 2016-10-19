@@ -21,11 +21,14 @@
     self.navigationItem.title = @"尝鲜人";
     //去除多余的线
     self.tableView.tableFooterView = [[UIView alloc] init];
-    //隐藏导航栏下面的线
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     //设置导航条背景色
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:65/255.0 green:227/255.0 blue:65/255.0 alpha:1];
+    //取消导航栏毛玻璃特效
+    self.navigationController.navigationBar.translucent = NO;
+    //隐藏导航栏下面的线
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -57,7 +60,7 @@
     if (indexPath.section == 0) {
         return self.view.frame.size.height / 5;
     }else
-        return 50;
+        return 45;
     
 }
 
@@ -73,11 +76,19 @@
                 cell.functionLbl.text = @"尝鲜人的地址";
                 break;
             case 1:
+                cell.functionImgView.image =[UIImage imageNamed:@"favorite"];
                 cell.functionLbl.text = @"尝鲜人的收藏";
                 break;
             case 2:
+                cell.functionImgView.image =[UIImage imageNamed:@"评价"];
                 cell.functionLbl.text = @"尝鲜人的评价";
                 break;
+            case 3:
+                cell.functionImgView.image =[UIImage imageNamed:@"提篮"];
+                cell.functionLbl.text = @"提篮换箩筐";
+                cell.subtitleLbl.text = @"鲜果0元购";
+                break;
+            
                 
             default:
                 break;

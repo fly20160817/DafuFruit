@@ -11,5 +11,6 @@
 @interface FunctionTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *functionImgView;
 @property (weak, nonatomic) IBOutlet UILabel *functionLbl;
+@property (weak, nonatomic) IBOutlet UILabel *subtitleLbl;
 
 @end
