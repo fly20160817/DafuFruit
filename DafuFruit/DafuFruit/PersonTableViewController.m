@@ -9,6 +9,7 @@
 #import "PersonTableViewController.h"
 #import "PeopleTableViewCell.h"
 #import "FunctionTableViewCell.h"
+#import "DetailViewController.h"
 @interface PersonTableViewController ()
 
 
@@ -35,6 +36,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,10 +78,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
+       
+        AVQuery *query = [AVQuery queryWithClassName:@"_User"];
+        [query getObjectInBackgroundWithId:@"5805d43b570c35006b7aa0a0" block:^(AVObject *object, NSError *error) {
+            NSString *number = object[@"mobilePhoneNumber"];
+            cell.mblLbl.text = number;
+            NSString *nickName = object[@"username"];
+            cell.nickNameLbl.text = nickName;
+            NSNumber *score = object[@"score"];
+            NSString *str = [NSString stringWithFormat:@"积分：%@",score ] ;
+            cell.integralLbl.text = str;
+            NSData *data = object[@"head"];
+            UIImage *image =[[UIImage alloc]initWithData:data];
+            cell.avanterImageView.image = image;
+            // object 就是 id 为 558e20cbe4b060308e3eb36c 的 Todo 对象实例
+            
+        }];
         //将头像按钮设置为圆形
         cell.avanterImageView.layer.cornerRadius = self.view.frame.size.height / 10 - 20;
         //给头像按钮添加一圈黑边
-        cell.avanterImageView.layer.borderWidth = 1;//边框宽度5
+        cell.avanterImageView.layer.borderWidth = 1;//边框宽度1
         //将多余部分剪裁掉
         cell.avanterImageView.clipsToBounds = YES;
         return cell;
@@ -136,6 +155,25 @@
 //摸了后做的事情
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
+    //用户详细信息
+    if (indexPath.section == 0){
+        DetailViewController *DVC = [[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Detail"];
+        [self.navigationController pushViewController:DVC animated:YES];
+    }else if (indexPath.section == 1){
+        
+    }else if (indexPath.section == 2){
+        
+    }else if (indexPath.section == 3){
+        //联系我们
+        if (indexPath.row == 1) {
+            //该地址字符串将实现询问是否拨打某电话后再根据用户的选择去跳转到“电话”APP去直接拨打，或者用户取消拨打
+            NSString *dialStr = [NSString stringWithFormat:@"telprompt://18861876277"];
+            //将NSString转换成NSURL数据类型
+            NSURL *dialUrl = [NSURL URLWithString:dialStr];
+            //用openURL方法去执行上述链接的调用（在这里是通话功能的调用）
+            [[UIApplication sharedApplication] openURL:dialUrl];
+        }
+    }
 }
 
 /*
