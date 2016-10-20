@@ -35,9 +35,7 @@
 
 -(void)clickaddBtn:(UIButton *)button
 {
-    [self dismissViewControllerAnimated:true completion:^{
-        [self.navigationController popToViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Person"] animated:YES];
-    }];
+   [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
