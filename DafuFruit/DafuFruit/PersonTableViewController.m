@@ -78,7 +78,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
-       
+        if([Utilities getUserDefaults:@"userName"]){
+            
+        
         AVQuery *query = [AVQuery queryWithClassName:@"_User"];
         [query getObjectInBackgroundWithId:@"5805d43b570c35006b7aa0a0" block:^(AVObject *object, NSError *error) {
             NSString *number = object[@"mobilePhoneNumber"];
@@ -92,8 +94,8 @@
             UIImage *image =[[UIImage alloc]initWithData:data];
             cell.avanterImageView.image = image;
             // object 就是 id 为 558e20cbe4b060308e3eb36c 的 Todo 对象实例
-            
-        }];
+            }];
+        }
         //将头像按钮设置为圆形
         cell.avanterImageView.layer.cornerRadius = self.view.frame.size.height / 10 - 20;
         //给头像按钮添加一圈黑边
@@ -157,8 +159,13 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
     //用户详细信息
     if (indexPath.section == 0){
+        if([Utilities getUserDefaults:@"userName"]){
         DetailViewController *DVC = [[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Detail"];
-        [self.navigationController pushViewController:DVC animated:YES];
+            [self.navigationController pushViewController:DVC animated:YES];
+        }else{
+            [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Wjt" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Longin"] animated:YES];
+            
+        }
     }else if (indexPath.section == 1){
         
     }else if (indexPath.section == 2){
