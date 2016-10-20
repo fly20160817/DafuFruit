@@ -36,7 +36,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
+    //当任何对象（object：nil）发出“UpdateProduct”这个通知（name:@"UpdateProduct"）时，由当前类（addObserver:self）去执行“updateProduct”方法（selector:@selector(updateProduct)）
+    [noteCenter addObserver:self.tableView selector:@selector(reloadData) name:@"SignOut" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +96,11 @@
             cell.avanterImageView.image = image;
             // object 就是 id 为 558e20cbe4b060308e3eb36c 的 Todo 对象实例
             }];
+        }else {
+            cell.mblLbl.text = @"登录后查看信息";
+            cell.nickNameLbl.text = @"点击立即登录";
+            cell.integralLbl.text = @"";
+            cell.avanterImageView.image = [UIImage imageNamed:@"默认头像"];
         }
         //将头像按钮设置为圆形
         cell.avanterImageView.layer.cornerRadius = self.view.frame.size.height / 10 - 20;
@@ -185,6 +192,9 @@
     }
 }
 
+//- (void)signOutAction{
+//    [self.tableView reloadData];
+//}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
