@@ -7,7 +7,7 @@
 //
 
 #import "LonginViewController.h"
-
+#import "PersonTableViewController.h"
 @interface LonginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
@@ -27,6 +27,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 27, 35, 35)];
+    [but setImage:[UIImage imageNamed:@"goback_back_orange_on"] forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(clickaddBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but];
+}
+
+-(void)clickaddBtn:(UIButton *)button
+{
+    [self dismissViewControllerAnimated:true completion:^{
+        [self.navigationController popToViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Person"] animated:YES];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
