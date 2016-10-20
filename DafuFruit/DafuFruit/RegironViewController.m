@@ -8,7 +8,6 @@
 
 #import "RegironViewController.h"
 #import "DGTimerButton.h"
-
 @interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event;
