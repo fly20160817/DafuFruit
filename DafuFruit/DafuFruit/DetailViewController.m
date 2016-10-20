@@ -9,7 +9,7 @@
 #import "DetailViewController.h"
 #import "FunctionTableViewCell.h"
 @interface DetailViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic,strong ) NSString * __block number;
+//@property (nonatomic,strong ) __block NSString *number;
 @end
 
 @implementation DetailViewController
@@ -28,15 +28,16 @@
     _detailTableView.dataSource = self;
     _detailTableView.delegate = self;
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
-    [query getObjectInBackgroundWithId:@"5805d43b570c35006b7aa0a0" block:^(AVObject *object, NSError *error) {
-        _number = object[@"mobilePhoneNumber"];
+    __block NSString *number;
+    [query getObjectInBackgroundWithId:[Utilities getUserDefaults:@"userName"] block:^(AVObject *object, NSError *error) {
+        number =object[@"mobilePhoneNumber"];
         NSString *nickName = object[@"username"];
         _nickNameLbl.text = nickName;
         NSData *data = object[@"head"];
         UIImage *image =[[UIImage alloc]initWithData:data];
         _avanterImg.image = image;
-
     }];
+    NSLog(@"%@",number);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,7 +66,10 @@
     if (indexPath.section == 0) {
     if (indexPath.row == 0) {
         cell.functionLbl.text = @"手机";
-        cell.subtitleLbl.text = _number;
+        AVQuery *query = [AVQuery queryWithClassName:@"_User"];
+        [query getObjectInBackgroundWithId:[Utilities getUserDefaults:@"userName"] block:^(AVObject *object, NSError *error) {
+        cell.subtitleLbl.text =object[@"mobilePhoneNumber"];
+        }];
     }else if (indexPath.row == 1) {
         cell.functionLbl.text = @"QQ";
         
@@ -81,6 +85,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
+    //退出登录
+    if (indexPath.section == 1) {
+        [Utilities removeUserDefaults:@"userName"];
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
 }
 /*
 #pragma mark - Navigation
