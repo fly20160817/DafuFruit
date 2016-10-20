@@ -91,6 +91,15 @@
 
 
 - (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event {
+    [AVUser logInWithMobilePhoneNumberInBackground:_userName.text password:_psd.text block:^(AVUser *user, NSError *error) {
+        if (user != nil) {
+            [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Person"] animated:YES];
+        } else {
+            NSLog(@"%@",error);
+        }
+        [Utilities setUserDefaults:@"userName"content:user.objectId];
+    }];
+
 }
 
 - (IBAction)forgotPsd:(UIButton *)sender forEvent:(UIEvent *)event {
