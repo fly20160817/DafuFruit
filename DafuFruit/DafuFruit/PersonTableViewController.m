@@ -38,13 +38,14 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
     //当任何对象（object：nil）发出“UpdateProduct”这个通知（name:@"UpdateProduct"）时，由当前类（addObserver:self）去执行“updateProduct”方法（selector:@selector(updateProduct)）
-    [noteCenter addObserver:self.tableView selector:@selector(reloadData) name:@"SignOut" object:nil];
+    [noteCenter addObserver:self.tableView selector:@selector(reloadData) name:@"reloadData" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
@@ -192,9 +193,6 @@
     }
 }
 
-//- (void)signOutAction{
-//    [self.tableView reloadData];
-//}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -238,5 +236,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)navigationController:(UINavigationController*)navigationController willShowViewController:(UIViewController*)viewController animated:(BOOL)animated{
+    [self.tableView reloadData];
+}
 @end

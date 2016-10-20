@@ -29,8 +29,10 @@
     //将多余部分剪裁掉
     _avanterImg.clipsToBounds = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+    //设置触摸次数
     tap.numberOfTapsRequired = 1;
-    [self.avanterImg addGestureRecognizer:tap];
+    _avanterImg.userInteractionEnabled = YES;
+    [_avanterImg addGestureRecognizer:tap];
     _detailTableView.dataSource = self;
     _detailTableView.delegate = self;
     AVQuery *query = [AVQuery queryWithClassName:@"_User"];
@@ -51,6 +53,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
@@ -96,7 +102,7 @@
         //初始化单例化的通知中心实例
         NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
         //创建一个通知：对所有对象（object:nil）广播发送一个名叫“UpdateProduct”（notificationWithName:@"UpdateProduct"）并且不带任何参数（userInfo:nil）的通知
-        NSNotification *note = [NSNotification notificationWithName:@"SignOut" object:nil userInfo:nil];
+        NSNotification *note = [NSNotification notificationWithName:@"reloadData" object:nil userInfo:nil];
         //在通知中心（广播台）发送（广播）上述通知
         //[noteCenter postNotification:note];
         //结合线程确保通知触发的操作在主线程上执行完成后再继续此处的下行流程
@@ -105,6 +111,7 @@
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender{
+    NSLog(@"点");
     //创建从底部滑上来的提示框
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *takePhoto = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -162,6 +169,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+
 
 /*
 #pragma mark - Navigation
