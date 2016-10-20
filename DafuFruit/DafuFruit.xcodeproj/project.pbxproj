@@ -28,6 +28,8 @@
 		84F402C61DB60012004BEDF8 /* DGTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F402C51DB60012004BEDF8 /* DGTimerButton.m */; };
 		88ED1574C564C1BFEE01846C /* libPods-DafuFruitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90D90230BDDEC4D6F2A96B6 /* libPods-DafuFruitTests.a */; };
 		BC83EAE9332290E0939E7291 /* libPods-DafuFruitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E49D093200139266C1661369 /* libPods-DafuFruitUITests.a */; };
+		C607E4411DB8708700B47241 /* AddressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C607E4401DB8708700B47241 /* AddressTableViewController.m */; };
+		C607E4441DB873DC00B47241 /* AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C607E4431DB873DC00B47241 /* AddressTableViewCell.m */; };
 		C6785F4B1DB4988700C39C2A /* PersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6785F4A1DB4988700C39C2A /* PersonTableViewController.m */; };
 		C6785F4E1DB4AC5500C39C2A /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6785F4D1DB4AC5500C39C2A /* PersonTableViewCell.m */; };
 		C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68C06791DB0E13900945FAA /* TabViewController.m */; };
@@ -96,6 +98,10 @@
 		84F402C51DB60012004BEDF8 /* DGTimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGTimerButton.m; sourceTree = "<group>"; };
 		BDF5D2C962717236EA690A0A /* Pods-DafuFruitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitUITests/Pods-DafuFruitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C36E778CCDAC14AB5EF93405 /* Pods-DafuFruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitTests/Pods-DafuFruitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C607E43F1DB8708700B47241 /* AddressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewController.h; sourceTree = "<group>"; };
+		C607E4401DB8708700B47241 /* AddressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewController.m; sourceTree = "<group>"; };
+		C607E4421DB873DC00B47241 /* AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewCell.h; sourceTree = "<group>"; };
+		C607E4431DB873DC00B47241 /* AddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewCell.m; sourceTree = "<group>"; };
 		C6785F491DB4988700C39C2A /* PersonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewController.h; sourceTree = "<group>"; };
 		C6785F4A1DB4988700C39C2A /* PersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewController.m; sourceTree = "<group>"; };
 		C6785F4C1DB4AC5500C39C2A /* PersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewCell.h; sourceTree = "<group>"; };
@@ -262,6 +268,8 @@
 				C6D311F41DB6156500F88CFD /* FunctionTableViewCell.m */,
 				C6785F4C1DB4AC5500C39C2A /* PersonTableViewCell.h */,
 				C6785F4D1DB4AC5500C39C2A /* PersonTableViewCell.m */,
+				C607E4421DB873DC00B47241 /* AddressTableViewCell.h */,
+				C607E4431DB873DC00B47241 /* AddressTableViewCell.m */,
 				84F402C21DB5FFE7004BEDF8 /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				C6E032351DB0D5060012677C /* FDL.storyboard */,
@@ -285,6 +293,8 @@
 				C6785F4A1DB4988700C39C2A /* PersonTableViewController.m */,
 				C6D311F71DB743E100F88CFD /* DetailViewController.h */,
 				C6D311F81DB743E100F88CFD /* DetailViewController.m */,
+				C607E43F1DB8708700B47241 /* AddressTableViewController.h */,
+				C607E4401DB8708700B47241 /* AddressTableViewController.m */,
 				8468FE841DB5F52E002BF3C7 /* OrderLoginBeforeViewController.h */,
 				8468FE851DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m */,
 				8468FE811DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.h */,
@@ -593,6 +603,8 @@
 				8468FE831DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.m in Sources */,
 				8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */,
 				8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */,
+				C607E4411DB8708700B47241 /* AddressTableViewController.m in Sources */,
+				C607E4441DB873DC00B47241 /* AddressTableViewCell.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

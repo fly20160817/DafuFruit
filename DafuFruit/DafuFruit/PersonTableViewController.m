@@ -167,6 +167,9 @@
             
         }
     }else if (indexPath.section == 1){
+        if (indexPath.row == 0) {
+            [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Address"] animated:YES];
+        }
         
     }else if (indexPath.section == 2){
         

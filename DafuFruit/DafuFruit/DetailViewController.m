@@ -9,7 +9,7 @@
 #import "DetailViewController.h"
 #import "FunctionTableViewCell.h"
 @interface DetailViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic,strong ) NSString *  number;
+@property (nonatomic,strong ) NSString * __block number;
 @end
 
 @implementation DetailViewController
