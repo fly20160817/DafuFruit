@@ -26,7 +26,7 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:65/255.0 green:227/255.0 blue:65/255.0 alpha:1];
     //取消导航栏毛玻璃特效
     self.navigationController.navigationBar.translucent = NO;
-    
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     //隐藏导航栏下面的线
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
@@ -82,7 +82,7 @@
             
         
         AVQuery *query = [AVQuery queryWithClassName:@"_User"];
-        [query getObjectInBackgroundWithId:@"5805d43b570c35006b7aa0a0" block:^(AVObject *object, NSError *error) {
+        [query getObjectInBackgroundWithId:[Utilities getUserDefaults:@"userName"] block:^(AVObject *object, NSError *error) {
             NSString *number = object[@"mobilePhoneNumber"];
             cell.mblLbl.text = number;
             NSString *nickName = object[@"username"];

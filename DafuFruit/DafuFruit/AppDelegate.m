@@ -17,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //[Utilities setUserDefaults:@"userName" content:@"5805d43b570c35006b7aa0a0"];
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
     UIStoryboard *FDL = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];

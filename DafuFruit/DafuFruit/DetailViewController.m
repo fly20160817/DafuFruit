@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.detailTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     //将头像按钮设置为圆形
     _avanterImg.layer.cornerRadius = self.view.frame.size.width/6 ;
     //给头像按钮添加一圈黑边
@@ -43,17 +44,38 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    if (section == 0) {
+        return 4;
+    }else{
+        return 1;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FunctionTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellFunction" forIndexPath:indexPath];
+    if (indexPath.section == 0) {
     if (indexPath.row == 0) {
         cell.functionLbl.text = @"手机";
         cell.subtitleLbl.text = _number;
+    }else if (indexPath.row == 1) {
+        cell.functionLbl.text = @"QQ";
+        
+    }else if (indexPath.row == 2) {
+        cell.functionLbl.text = @"微信";
+    }else if (indexPath.row == 3) {
+        cell.functionLbl.text = @"微博";
     }
+}else if (indexPath.section == 1)
+    cell.functionLbl.text = @"退出登录";
     return cell;
 }
 
