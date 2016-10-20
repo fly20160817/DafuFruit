@@ -111,7 +111,6 @@
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender{
-    NSLog(@"点");
     //创建从底部滑上来的提示框
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *takePhoto = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -164,6 +163,11 @@
     if (image) {
         //将上图设置被按钮的背景图
         _avanterImg.image = image;
+        AVObject *query = [AVObject objectWithClassName:@"_User"objectId:[Utilities getUserDefaults:@"userName"]];
+        NSData *data = UIImagePNGRepresentation(image);
+        [query setObject:data forKey:@"head"];
+        [query saveInBackground];
+      
     }
     //将媒体选择器手动收回
     [self dismissViewControllerAnimated:YES completion:nil];
