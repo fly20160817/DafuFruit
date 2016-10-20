@@ -8,13 +8,13 @@
 
 #import "LonginViewController.h"
 #import "PersonTableViewController.h"
+#import "RegironViewController.h"
 @interface LonginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *psd;
 
-- (IBAction)regionOne:(UIButton *)sender forEvent:(UIEvent *)event;
 
 - (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event;
 
@@ -26,17 +26,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 27, 35, 35)];
-    [but setImage:[UIImage imageNamed:@"goback_back_orange_on"] forState:UIControlStateNormal];
+    UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 25, 50, 50)];
+    [but setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
     [but addTarget:self action:@selector(clickaddBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
+    
+    UIButton *zhuce =[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width-60, 35, 50, 30)];
+    [zhuce setTitle:@"注册" forState:UIControlStateNormal];
+    [zhuce setTitleColor:[UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1] forState:UIControlStateNormal];
+    zhuce.font=[UIFont systemFontOfSize:20];
+    [zhuce addTarget:self action:@selector(zhuce) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:zhuce];
+    
+    
+    UILabel *lanel=[[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width-30)/2, 35, 50, 30)];
+    lanel.text=@"登录";
+    lanel.textColor=[UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1];
+    lanel.font=[UIFont systemFontOfSize:21];
+    [self.view addSubview:lanel];
 }
 
 -(void)clickaddBtn:(UIButton *)button
 {
-   [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void)zhuce
+{
+    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Wjt" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"region"] animated:YES];
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -68,8 +89,6 @@
 }
 */
 
-- (IBAction)regionOne:(UIButton *)sender forEvent:(UIEvent *)event {
-}
 
 - (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event {
 }

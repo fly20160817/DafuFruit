@@ -11,6 +11,8 @@
 
 @interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+- (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event;
+
 
 @end
 
@@ -20,6 +22,19 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 20, 50, 50)];
+    [but setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(clickaddBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but];
+
+    
+    UILabel *lanel=[[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width-30)/2, 30, 50, 30)];
+    lanel.text=@"注册";
+    lanel.textColor=[UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1];
+    lanel.font=[UIFont systemFontOfSize:21];
+    [self.view addSubview:lanel];
+
     // Do any additional setup after loading the view.
     
     bu = [DGTimerButton buttonWithType:UIButtonTypeCustom];
@@ -50,6 +65,28 @@
                                 
                             }];
     [self.view addSubview:bu];
+}
+
+
+-(void)clickaddBtn:(UIButton *)button
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // 隐藏导航栏方法
+    self.navigationController.navigationBarHidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 -(void)beginTimer{
@@ -116,5 +153,7 @@
 */
 
 - (IBAction)remain:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+- (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event {
 }
 @end
