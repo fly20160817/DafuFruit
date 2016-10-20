@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWm-eN-m9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="257"/>
+            <point key="canvasLocation" x="496" y="257"/>
         </scene>
         <!--Regiron View Controller-->
         <scene sceneID="7vw-OP-HuU">
@@ -161,7 +161,7 @@
                                     <constraint firstAttribute="height" constant="240" id="NGI-IL-4Dr"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="one" id="zDh-Q8-dSv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="one" id="zDh-Q8-dSv" customClass="RegionTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zDh-Q8-dSv" id="L6Y-yi-q5D">
@@ -182,8 +182,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="V0E-MU-l6X" secondAttribute="bottom" constant="6" id="O8B-wP-QPz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userName" destination="V0E-MU-l6X" id="eoO-T4-kMD"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="two" id="eTO-3g-opN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="two" id="eTO-3g-opN" customClass="CodeTableViewCell">
                                         <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eTO-3g-opN" id="6S6-ou-NvY">
@@ -204,8 +207,11 @@
                                                 <constraint firstItem="fIY-CS-Y9t" firstAttribute="top" secondItem="6S6-ou-NvY" secondAttribute="top" constant="6" id="o3Z-lX-e5z"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Verification" destination="fIY-CS-Y9t" id="bij-qv-YCA"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="there" id="mvY-S9-IAc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="there" id="mvY-S9-IAc" customClass="psdTableViewCell">
                                         <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mvY-S9-IAc" id="47j-4W-z5c">
@@ -226,8 +232,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="rHE-e2-xad" secondAttribute="bottom" constant="6" id="wro-zd-pPP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="psd" destination="rHE-e2-xad" id="HGM-e9-FXE"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="four" id="HXF-4w-LSg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="four" id="HXF-4w-LSg" customClass="confirmTableViewCell">
                                         <rect key="frame" x="0.0" y="160" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HXF-4w-LSg" id="YJM-kz-5kV">
@@ -248,6 +257,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="fFg-4e-OcJ" secondAttribute="bottom" constant="6" id="yR0-xf-uqE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Confirm" destination="fFg-4e-OcJ" id="7JP-gP-wrK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

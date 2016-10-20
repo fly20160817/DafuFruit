@@ -103,7 +103,7 @@
     [window addSubview:_modal];
 }
 
-
+    
 
 - (void)hideModalLoading
 {

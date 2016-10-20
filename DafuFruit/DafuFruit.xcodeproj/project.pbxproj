@@ -16,6 +16,10 @@
 		8473B3FB1DB89575009E726F /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8473B3F81DB89575009E726F /* Wjt.storyboard */; };
 		8473B3FE1DB89728009E726F /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B3FD1DB89728009E726F /* RegironViewController.m */; };
 		8473B4011DB8972E009E726F /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4001DB8972E009E726F /* LonginViewController.m */; };
+		8473B4041DB8AF79009E726F /* RegionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4031DB8AF79009E726F /* RegionTableViewCell.m */; };
+		8473B4071DB8B080009E726F /* CodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4061DB8B080009E726F /* CodeTableViewCell.m */; };
+		8473B40A1DB8B099009E726F /* psdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4091DB8B099009E726F /* psdTableViewCell.m */; };
+		8473B40D1DB8B0B5009E726F /* confirmTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */; };
 		84F0EAB11DACD08400D31CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB01DACD08400D31CA9 /* main.m */; };
 		84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB31DACD08400D31CA9 /* AppDelegate.m */; };
 		84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB61DACD08400D31CA9 /* ViewController.m */; };
@@ -77,6 +81,14 @@
 		8473B3FD1DB89728009E726F /* RegironViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegironViewController.m; sourceTree = "<group>"; };
 		8473B3FF1DB8972E009E726F /* LonginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonginViewController.h; sourceTree = "<group>"; };
 		8473B4001DB8972E009E726F /* LonginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonginViewController.m; sourceTree = "<group>"; };
+		8473B4021DB8AF79009E726F /* RegionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionTableViewCell.h; sourceTree = "<group>"; };
+		8473B4031DB8AF79009E726F /* RegionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionTableViewCell.m; sourceTree = "<group>"; };
+		8473B4051DB8B080009E726F /* CodeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeTableViewCell.h; sourceTree = "<group>"; };
+		8473B4061DB8B080009E726F /* CodeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeTableViewCell.m; sourceTree = "<group>"; };
+		8473B4081DB8B099009E726F /* psdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psdTableViewCell.h; sourceTree = "<group>"; };
+		8473B4091DB8B099009E726F /* psdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = psdTableViewCell.m; sourceTree = "<group>"; };
+		8473B40B1DB8B0B5009E726F /* confirmTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirmTableViewCell.h; sourceTree = "<group>"; };
+		8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = confirmTableViewCell.m; sourceTree = "<group>"; };
 		84F0EAAC1DACD08400D31CA9 /* DafuFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DafuFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0EAB01DACD08400D31CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F0EAB21DACD08400D31CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +166,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8473B40E1DB8B1BC009E726F /* RegisteredCell */ = {
+			isa = PBXGroup;
+			children = (
+				8473B4021DB8AF79009E726F /* RegionTableViewCell.h */,
+				8473B4031DB8AF79009E726F /* RegionTableViewCell.m */,
+				8473B4051DB8B080009E726F /* CodeTableViewCell.h */,
+				8473B4061DB8B080009E726F /* CodeTableViewCell.m */,
+				8473B4081DB8B099009E726F /* psdTableViewCell.h */,
+				8473B4091DB8B099009E726F /* psdTableViewCell.m */,
+				8473B40B1DB8B0B5009E726F /* confirmTableViewCell.h */,
+				8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */,
+			);
+			name = RegisteredCell;
+			sourceTree = "<group>";
+		};
 		84F0EAA31DACD08300D31CA9 = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +297,7 @@
 				C6785F4D1DB4AC5500C39C2A /* PersonTableViewCell.m */,
 				C607E4421DB873DC00B47241 /* AddressTableViewCell.h */,
 				C607E4431DB873DC00B47241 /* AddressTableViewCell.m */,
+				8473B40E1DB8B1BC009E726F /* RegisteredCell */,
 				8473B3F81DB89575009E726F /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				C6E032351DB0D5060012677C /* FDL.storyboard */,
@@ -586,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8473B4071DB8B080009E726F /* CodeTableViewCell.m in Sources */,
 				C6BE19E31DADD08600A7B477 /* Utilities.m in Sources */,
 				C6D311F61DB6156500F88CFD /* FunctionTableViewCell.m in Sources */,
 				84F0EABD1DACD08400D31CA9 /* DafuFruit.xcdatamodeld in Sources */,
@@ -595,8 +624,11 @@
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
 				8473B4011DB8972E009E726F /* LonginViewController.m in Sources */,
 				C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */,
+				8473B40D1DB8B0B5009E726F /* confirmTableViewCell.m in Sources */,
 				8473B3FE1DB89728009E726F /* RegironViewController.m in Sources */,
 				C6D311F51DB6156500F88CFD /* PeopleTableViewCell.m in Sources */,
+				8473B40A1DB8B099009E726F /* psdTableViewCell.m in Sources */,
+				8473B4041DB8AF79009E726F /* RegionTableViewCell.m in Sources */,
 				C6D311F91DB743E100F88CFD /* DetailViewController.m in Sources */,
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
