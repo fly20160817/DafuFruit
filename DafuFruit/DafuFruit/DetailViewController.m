@@ -13,6 +13,7 @@
 @interface DetailViewController ()<UITableViewDataSource, UITableViewDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic,strong ) __block NSString *number;
 @property (strong, nonatomic)UIImagePickerController *imgPicker;//图片选择器
+@property (strong, nonatomic) UIActivityIndicatorView * aiv;//加载视图
 @end
 
 @implementation DetailViewController
@@ -28,6 +29,10 @@
     _avanterImg.layer.borderWidth = 1;//边框宽度1
     //将多余部分剪裁掉
     _avanterImg.clipsToBounds = YES;
+    
+    //创建菊花膜并且转起来
+    _aiv = [Utilities getCoverOnView:self.view];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
     //设置触摸次数
     tap.numberOfTapsRequired = 1;
@@ -44,6 +49,8 @@
         NSData *data = object[@"head"];
         UIImage *image =[[UIImage alloc]initWithData:data];
         _avanterImg.image = image;
+        //撕掉菊花膜
+        [_aiv stopAnimating];
         [weakself.detailTableView reloadData];
     }];
 }
