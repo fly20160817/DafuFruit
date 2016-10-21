@@ -46,7 +46,6 @@
         _avanterImg.image = image;
         [weakself.detailTableView reloadData];
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,14 +98,6 @@
     if (indexPath.section == 1) {
         [Utilities removeUserDefaults:@"userName"];
         [self.navigationController popViewControllerAnimated:YES];
-        //初始化单例化的通知中心实例
-        NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
-        //创建一个通知：对所有对象（object:nil）广播发送一个名叫“UpdateProduct”（notificationWithName:@"UpdateProduct"）并且不带任何参数（userInfo:nil）的通知
-        NSNotification *note = [NSNotification notificationWithName:@"reloadData" object:nil userInfo:nil];
-        //在通知中心（广播台）发送（广播）上述通知
-        //[noteCenter postNotification:note];
-        //结合线程确保通知触发的操作在主线程上执行完成后再继续此处的下行流程
-        [noteCenter performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
     }
 }
 
@@ -163,10 +154,10 @@
     if (image) {
         //将上图设置被按钮的背景图
         _avanterImg.image = image;
-        AVObject *query = [AVObject objectWithClassName:@"_User"objectId:[Utilities getUserDefaults:@"userName"]];
+        AVObject *user = [AVObject objectWithClassName:@"_User"objectId:[Utilities getUserDefaults:@"userName"]];
         NSData *data = UIImagePNGRepresentation(image);
-        [query setObject:data forKey:@"head"];
-        [query saveInBackground];
+        [user setObject:data forKey:@"head"];
+        [user saveInBackground];
       
     }
     //将媒体选择器手动收回

@@ -27,6 +27,19 @@
     //取消导航栏毛玻璃特效
     self.navigationController.navigationBar.translucent = NO;
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
+    //初始化下拉刷新控件
+    UIRefreshControl * rc = [UIRefreshControl new];
+    //为刷新器设置下标
+    rc.tag = 10086;
+    //设置刷新器的风格颜色（风格颜色在这里指的是设置“菊花”的颜色）
+    rc.tintColor = [UIColor darkGrayColor];
+    //设置刷新器的背景色
+    rc.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    //定义当用户触发下拉事件时要执行的方法（这里监听的事件是）
+    [rc addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+    //将下拉刷新控件添加到表格视图上（只有在滚动视图上才能添加下拉刷新控件）
+    [self.tableView addSubview:rc];
     //隐藏导航栏下面的线
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
@@ -36,16 +49,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
-    //当任何对象（object：nil）发出“UpdateProduct”这个通知（name:@"UpdateProduct"）时，由当前类（addObserver:self）去执行“updateProduct”方法（selector:@selector(updateProduct)）
-    [noteCenter addObserver:self.tableView selector:@selector(reloadData) name:@"reloadData" object:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
@@ -236,7 +249,9 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (void)navigationController:(UINavigationController*)navigationController willShowViewController:(UIViewController*)viewController animated:(BOOL)animated{
-    [self.tableView reloadData];
+
+
+- (void)refreshData{
+    
 }
 @end
