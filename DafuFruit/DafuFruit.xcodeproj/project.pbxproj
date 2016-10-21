@@ -42,6 +42,8 @@
 		C6D311F51DB6156500F88CFD /* PeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D311F21DB6156500F88CFD /* PeopleTableViewCell.m */; };
 		C6D311F61DB6156500F88CFD /* FunctionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D311F41DB6156500F88CFD /* FunctionTableViewCell.m */; };
 		C6D311F91DB743E100F88CFD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D311F81DB743E100F88CFD /* DetailViewController.m */; };
+		C6D6E0CE1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D6E0CD1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m */; };
+		C6D6E0D11DB9C6F6000050F6 /* FavouiteFruitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D6E0D01DB9C6F6000050F6 /* FavouiteFruitTableViewController.m */; };
 		C6E032361DB0D5060012677C /* FDL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E032351DB0D5060012677C /* FDL.storyboard */; };
 		D70D17B8B11F17333A4E494D /* libPods-DafuFruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDF64DB00EDEEE638FD3FC3 /* libPods-DafuFruit.a */; };
 /* End PBXBuildFile section */
@@ -131,6 +133,10 @@
 		C6D311F41DB6156500F88CFD /* FunctionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionTableViewCell.m; sourceTree = "<group>"; };
 		C6D311F71DB743E100F88CFD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C6D311F81DB743E100F88CFD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C6D6E0CC1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteFruitTableViewCell.h; sourceTree = "<group>"; };
+		C6D6E0CD1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteFruitTableViewCell.m; sourceTree = "<group>"; };
+		C6D6E0CF1DB9C6F6000050F6 /* FavouiteFruitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouiteFruitTableViewController.h; sourceTree = "<group>"; };
+		C6D6E0D01DB9C6F6000050F6 /* FavouiteFruitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouiteFruitTableViewController.m; sourceTree = "<group>"; };
 		C6E032351DB0D5060012677C /* FDL.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FDL.storyboard; sourceTree = "<group>"; };
 		C90D90230BDDEC4D6F2A96B6 /* libPods-DafuFruitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DafuFruitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D049475E0815D09E3FFC3CA0 /* Pods-DafuFruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DafuFruitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DafuFruitTests/Pods-DafuFruitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +303,8 @@
 				C6785F4D1DB4AC5500C39C2A /* PersonTableViewCell.m */,
 				C607E4421DB873DC00B47241 /* AddressTableViewCell.h */,
 				C607E4431DB873DC00B47241 /* AddressTableViewCell.m */,
+				C6D6E0CC1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.h */,
+				C6D6E0CD1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m */,
 				8473B40E1DB8B1BC009E726F /* RegisteredCell */,
 				8473B3F81DB89575009E726F /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
@@ -323,6 +331,8 @@
 				C6D311F81DB743E100F88CFD /* DetailViewController.m */,
 				C607E43F1DB8708700B47241 /* AddressTableViewController.h */,
 				C607E4401DB8708700B47241 /* AddressTableViewController.m */,
+				C6D6E0CF1DB9C6F6000050F6 /* FavouiteFruitTableViewController.h */,
+				C6D6E0D01DB9C6F6000050F6 /* FavouiteFruitTableViewController.m */,
 				8468FE841DB5F52E002BF3C7 /* OrderLoginBeforeViewController.h */,
 				8468FE851DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m */,
 				8468FE811DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.h */,
@@ -633,10 +643,12 @@
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
 				8468FE831DB5F4D9002BF3C7 /* OrderLoginAfterwardViewController.m in Sources */,
+				C6D6E0D11DB9C6F6000050F6 /* FavouiteFruitTableViewController.m in Sources */,
 				8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */,
 				8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */,
 				C607E4411DB8708700B47241 /* AddressTableViewController.m in Sources */,
 				C607E4441DB873DC00B47241 /* AddressTableViewCell.m in Sources */,
+				C6D6E0CE1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

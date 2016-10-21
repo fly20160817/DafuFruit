@@ -12,7 +12,6 @@
 #import "DetailViewController.h"
 @interface PersonTableViewController ()
 
-
 @end
 
 @implementation PersonTableViewController
@@ -27,7 +26,7 @@
     //取消导航栏毛玻璃特效
     self.navigationController.navigationBar.translucent = NO;
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    
+
     //初始化下拉刷新控件
     UIRefreshControl * rc = [UIRefreshControl new];
     //为刷新器设置下标
@@ -37,9 +36,10 @@
     //设置刷新器的背景色
     rc.backgroundColor = [UIColor groupTableViewBackgroundColor];
     //定义当用户触发下拉事件时要执行的方法（这里监听的事件是）
-    [rc addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+    [rc addTarget:self.tableView action:@selector(reloadData) forControlEvents:UIControlEventValueChanged];
     //将下拉刷新控件添加到表格视图上（只有在滚动视图上才能添加下拉刷新控件）
     [self.tableView addSubview:rc];
+    
     //隐藏导航栏下面的线
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
@@ -94,10 +94,9 @@
     if (indexPath.section == 0) {
         PeopleTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"CellPeople" forIndexPath:indexPath];
         if([Utilities getUserDefaults:@"userName"]){
-            
-        
         AVQuery *query = [AVQuery queryWithClassName:@"_User"];
         [query getObjectInBackgroundWithId:[Utilities getUserDefaults:@"userName"] block:^(AVObject *object, NSError *error) {
+            
             NSString *number = object[@"mobilePhoneNumber"];
             cell.mblLbl.text = number;
             NSString *nickName = object[@"username"];
@@ -108,6 +107,8 @@
             NSData *data = object[@"head"];
             UIImage *image =[[UIImage alloc]initWithData:data];
             cell.avanterImageView.image = image;
+            //结束下拉刷新
+            [self endUIRefreshControl];
             // object 就是 id 为 558e20cbe4b060308e3eb36c 的 Todo 对象实例
             }];
         }else {
@@ -115,6 +116,7 @@
             cell.nickNameLbl.text = @"点击立即登录";
             cell.integralLbl.text = @"";
             cell.avanterImageView.image = [UIImage imageNamed:@"默认头像"];
+            [self endUIRefreshControl];
         }
         //将头像按钮设置为圆形
         cell.avanterImageView.layer.cornerRadius = self.view.frame.size.height / 10 - 20;
@@ -189,6 +191,8 @@
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Address"] animated:YES];
+        }else if (indexPath.row ==1){
+            [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Favourit"] animated:YES];
         }
         
     }else if (indexPath.section == 2){
@@ -249,9 +253,10 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
-- (void)refreshData{
-    
+#pragma mark - UIRefreshControl
+//结束下拉刷新
+- (void)endUIRefreshControl{
+    UIRefreshControl * rc = (UIRefreshControl *)[self.tableView viewWithTag:10086];
+    [rc endRefreshing];
 }
 @end
