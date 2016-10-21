@@ -9,6 +9,10 @@
 #import "RegironViewController.h"
 #import "DGTimerButton.h"
 @interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *userPhone;
+@property (weak, nonatomic) IBOutlet UITextField *VerificationCode;
+@property (weak, nonatomic) IBOutlet UITextField *psWord;
+@property (weak, nonatomic) IBOutlet UITextField *confirm;
 
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event;
 
@@ -46,7 +50,7 @@
     [bu.layer setBorderWidth:1.0];
     bu.layer.borderColor=[UIColor orangeColor].CGColor;
     [bu addTarget:self action:@selector(beginTimer) forControlEvents:UIControlEventTouchUpInside];
-    [bu setFrame:CGRectMake(325, 275, 76, 31)];
+    [bu setFrame:CGRectMake(325, 312, 76, 31)];
     //bu.formatStr=@"还剩%zd秒了";
     [bu setDGTimerButtonWithDuration:60
                          runingColor:[UIColor whiteColor]                                               runingTextColor:[UIColor orangeColor]
@@ -90,6 +94,10 @@
 
 -(void)beginTimer{
     [bu beginTimers];
+
+    [AVOSCloud requestSmsCodeWithPhoneNumber:_userPhone.text callback:^(BOOL succeeded, NSError *error) {
+        // 发送失败可以查看 error 里面提供的信息
+    }];
 }
 
 -(UIColor *)color {
@@ -151,8 +159,16 @@
 }
 */
 
-- (IBAction)remain:(UIButton *)sender forEvent:(UIEvent *)event {
-}
+
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event {
+    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_userPhone.text smsCode:_VerificationCode.text block:^(AVUser *user, NSError *error) {
+        if ([_psWord.text isEqualToString:_confirm.text]) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }else {
+            NSLog(@"密码错误");
+        }
+        NSLog(@"%@",error);
+    }];
+    
 }
 @end

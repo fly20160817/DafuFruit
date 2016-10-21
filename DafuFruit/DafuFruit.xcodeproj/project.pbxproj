@@ -13,13 +13,9 @@
 		8468FE881DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE871DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard */; };
 		8468FE8C1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */; };
 		8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */; };
-		8473B3FB1DB89575009E726F /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8473B3F81DB89575009E726F /* Wjt.storyboard */; };
-		8473B3FE1DB89728009E726F /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B3FD1DB89728009E726F /* RegironViewController.m */; };
 		8473B4011DB8972E009E726F /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4001DB8972E009E726F /* LonginViewController.m */; };
-		8473B4041DB8AF79009E726F /* RegionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4031DB8AF79009E726F /* RegionTableViewCell.m */; };
-		8473B4071DB8B080009E726F /* CodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4061DB8B080009E726F /* CodeTableViewCell.m */; };
-		8473B40A1DB8B099009E726F /* psdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4091DB8B099009E726F /* psdTableViewCell.m */; };
-		8473B40D1DB8B0B5009E726F /* confirmTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */; };
+		8494107A1DBA142C008DD06D /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849410781DBA142C008DD06D /* RegironViewController.m */; };
+		8494107B1DBA142C008DD06D /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849410791DBA142C008DD06D /* Wjt.storyboard */; };
 		84F0EAB11DACD08400D31CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB01DACD08400D31CA9 /* main.m */; };
 		84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB31DACD08400D31CA9 /* AppDelegate.m */; };
 		84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EAB61DACD08400D31CA9 /* ViewController.m */; };
@@ -78,19 +74,11 @@
 		8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LFOrderLoginAfterward.storyboard; sourceTree = "<group>"; };
 		8468FE8D1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderLoginAfterwardTableViewCell.h; sourceTree = "<group>"; };
 		8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLoginAfterwardTableViewCell.m; sourceTree = "<group>"; };
-		8473B3F81DB89575009E726F /* Wjt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wjt.storyboard; sourceTree = "<group>"; };
-		8473B3FC1DB89728009E726F /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
-		8473B3FD1DB89728009E726F /* RegironViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegironViewController.m; sourceTree = "<group>"; };
 		8473B3FF1DB8972E009E726F /* LonginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonginViewController.h; sourceTree = "<group>"; };
 		8473B4001DB8972E009E726F /* LonginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonginViewController.m; sourceTree = "<group>"; };
-		8473B4021DB8AF79009E726F /* RegionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionTableViewCell.h; sourceTree = "<group>"; };
-		8473B4031DB8AF79009E726F /* RegionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionTableViewCell.m; sourceTree = "<group>"; };
-		8473B4051DB8B080009E726F /* CodeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeTableViewCell.h; sourceTree = "<group>"; };
-		8473B4061DB8B080009E726F /* CodeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeTableViewCell.m; sourceTree = "<group>"; };
-		8473B4081DB8B099009E726F /* psdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psdTableViewCell.h; sourceTree = "<group>"; };
-		8473B4091DB8B099009E726F /* psdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = psdTableViewCell.m; sourceTree = "<group>"; };
-		8473B40B1DB8B0B5009E726F /* confirmTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirmTableViewCell.h; sourceTree = "<group>"; };
-		8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = confirmTableViewCell.m; sourceTree = "<group>"; };
+		849410771DBA142C008DD06D /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
+		849410781DBA142C008DD06D /* RegironViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegironViewController.m; sourceTree = "<group>"; };
+		849410791DBA142C008DD06D /* Wjt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wjt.storyboard; sourceTree = "<group>"; };
 		84F0EAAC1DACD08400D31CA9 /* DafuFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DafuFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0EAB01DACD08400D31CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F0EAB21DACD08400D31CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,21 +160,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8473B40E1DB8B1BC009E726F /* RegisteredCell */ = {
-			isa = PBXGroup;
-			children = (
-				8473B4021DB8AF79009E726F /* RegionTableViewCell.h */,
-				8473B4031DB8AF79009E726F /* RegionTableViewCell.m */,
-				8473B4051DB8B080009E726F /* CodeTableViewCell.h */,
-				8473B4061DB8B080009E726F /* CodeTableViewCell.m */,
-				8473B4081DB8B099009E726F /* psdTableViewCell.h */,
-				8473B4091DB8B099009E726F /* psdTableViewCell.m */,
-				8473B40B1DB8B0B5009E726F /* confirmTableViewCell.h */,
-				8473B40C1DB8B0B5009E726F /* confirmTableViewCell.m */,
-			);
-			name = RegisteredCell;
-			sourceTree = "<group>";
-		};
 		84F0EAA31DACD08300D31CA9 = {
 			isa = PBXGroup;
 			children = (
@@ -305,8 +278,7 @@
 				C607E4431DB873DC00B47241 /* AddressTableViewCell.m */,
 				C6D6E0CC1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.h */,
 				C6D6E0CD1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m */,
-				8473B40E1DB8B1BC009E726F /* RegisteredCell */,
-				8473B3F81DB89575009E726F /* Wjt.storyboard */,
+				849410791DBA142C008DD06D /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				C6E032351DB0D5060012677C /* FDL.storyboard */,
 				60CC561A1DB4607C00AF65FA /* liyu.storyboard */,
@@ -343,8 +315,8 @@
 				84F402C51DB60012004BEDF8 /* DGTimerButton.m */,
 				8473B3FF1DB8972E009E726F /* LonginViewController.h */,
 				8473B4001DB8972E009E726F /* LonginViewController.m */,
-				8473B3FC1DB89728009E726F /* RegironViewController.h */,
-				8473B3FD1DB89728009E726F /* RegironViewController.m */,
+				849410771DBA142C008DD06D /* RegironViewController.h */,
+				849410781DBA142C008DD06D /* RegironViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -471,7 +443,7 @@
 			files = (
 				84F0EAC21DACD08400D31CA9 /* LaunchScreen.storyboard in Resources */,
 				8468FE881DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard in Resources */,
-				8473B3FB1DB89575009E726F /* Wjt.storyboard in Resources */,
+				8494107B1DBA142C008DD06D /* Wjt.storyboard in Resources */,
 				60CC561B1DB4607C00AF65FA /* liyu.storyboard in Resources */,
 				84F0EABF1DACD08400D31CA9 /* Assets.xcassets in Resources */,
 				8468FE8C1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard in Resources */,
@@ -624,7 +596,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8473B4071DB8B080009E726F /* CodeTableViewCell.m in Sources */,
 				C6BE19E31DADD08600A7B477 /* Utilities.m in Sources */,
 				C6D311F61DB6156500F88CFD /* FunctionTableViewCell.m in Sources */,
 				84F0EABD1DACD08400D31CA9 /* DafuFruit.xcdatamodeld in Sources */,
@@ -634,11 +605,7 @@
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
 				8473B4011DB8972E009E726F /* LonginViewController.m in Sources */,
 				C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */,
-				8473B40D1DB8B0B5009E726F /* confirmTableViewCell.m in Sources */,
-				8473B3FE1DB89728009E726F /* RegironViewController.m in Sources */,
 				C6D311F51DB6156500F88CFD /* PeopleTableViewCell.m in Sources */,
-				8473B40A1DB8B099009E726F /* psdTableViewCell.m in Sources */,
-				8473B4041DB8AF79009E726F /* RegionTableViewCell.m in Sources */,
 				C6D311F91DB743E100F88CFD /* DetailViewController.m in Sources */,
 				84F0EAB41DACD08400D31CA9 /* AppDelegate.m in Sources */,
 				C6BE19E61DADD14F00A7B477 /* HomeTableViewController.m in Sources */,
@@ -648,6 +615,7 @@
 				8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */,
 				C607E4411DB8708700B47241 /* AddressTableViewController.m in Sources */,
 				C607E4441DB873DC00B47241 /* AddressTableViewCell.m in Sources */,
+				8494107A1DBA142C008DD06D /* RegironViewController.m in Sources */,
 				C6D6E0CE1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
 			);
