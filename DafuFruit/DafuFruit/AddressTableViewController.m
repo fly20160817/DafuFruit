@@ -33,20 +33,20 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AddressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellAddress" forIndexPath:indexPath];
-    
-    // Configure the cell...
+    AVQuery *query = [AVQuery queryWithClassName:@"Adress"];
+    [query getObjectInBackgroundWithId:[Utilities getUserDefaults:@"userName"] block:^(AVObject *object, NSError *error) {
+        
+    }];
     
     return cell;
 }

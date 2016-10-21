@@ -9,7 +9,7 @@
 #import "LonginViewController.h"
 #import "PersonTableViewController.h"
 #import "RegironViewController.h"
-@interface LonginViewController ()
+@interface LonginViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _userName.delegate = self;
+    _psd.delegate = self;
     UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 25, 50, 50)];
     [but setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
     [but addTarget:self action:@selector(clickaddBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -44,6 +46,12 @@
     lanel.textColor=[UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1];
     lanel.font=[UIFont systemFontOfSize:21];
     [self.view addSubview:lanel];
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHide:)];
+    //设置成NO表示当前控件响应后会传播到其他控件上，默认为YES。
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    //将触摸事件添加到当前view
+    [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 
 -(void)clickaddBtn:(UIButton *)button
@@ -88,6 +96,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    //让键盘收回去
+    [textField resignFirstResponder];
+    return YES;
+    
+}
+
+-(void)keyboardHide:(UITapGestureRecognizer*)tap{
+    [_psd resignFirstResponder];
+    [_userName resignFirstResponder];
+}
 
 
 - (IBAction)longIn:(UIButton *)sender forEvent:(UIEvent *)event {
