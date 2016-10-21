@@ -9,6 +9,10 @@
 #import "RegironViewController.h"
 #import "DGTimerButton.h"
 @interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *userPhon;
+@property (weak, nonatomic) IBOutlet UITextField *Verification;
+@property (weak, nonatomic) IBOutlet UITextField *psword;
+@property (weak, nonatomic) IBOutlet UITextField *confirm;
 
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event;
 
@@ -46,7 +50,7 @@
     [bu.layer setBorderWidth:1.0];
     bu.layer.borderColor=[UIColor orangeColor].CGColor;
     [bu addTarget:self action:@selector(beginTimer) forControlEvents:UIControlEventTouchUpInside];
-    [bu setFrame:CGRectMake(325, 275, 76, 31)];
+    [bu setFrame:CGRectMake(325, 312, 76, 31)];
     //bu.formatStr=@"还剩%zd秒了";
     [bu setDGTimerButtonWithDuration:60
                          runingColor:[UIColor whiteColor]                                               runingTextColor:[UIColor orangeColor]
@@ -90,6 +94,9 @@
 
 -(void)beginTimer{
     [bu beginTimers];
+
+    [AVOSCloud requestSmsCodeWithPhoneNumber:_userPhon.text callback:^(BOOL succeeded, NSError *error) {
+    }];
 }
 
 -(UIColor *)color {
@@ -151,8 +158,18 @@
 }
 */
 
-- (IBAction)remain:(UIButton *)sender forEvent:(UIEvent *)event {
-}
+
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event {
+    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_userPhon.text smsCode:_Verification.text block:^(AVUser *user, NSError *error) {
+        // 如果 error 为空就可以表示登录成功了，并且 user 是一个全新的用户
+        if ([_psword.text isEqualToString:_confirm.text]) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }else{
+            NSLog(@"两次密码不正确");
+        }
+        NSLog(@"%@",error);
+        
+    }];
+    
 }
 @end
