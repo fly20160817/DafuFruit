@@ -353,25 +353,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-pw-Dtj">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杨梅" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-pw-Dtj">
                                             <rect key="frame" x="15" y="8" width="104" height="104"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="gTy-pw-Dtj" secondAttribute="height" id="fOj-9H-gcL"/>
+                                                <constraint firstAttribute="width" secondItem="gTy-pw-Dtj" secondAttribute="height" multiplier="1:1" id="fOj-9H-gcL"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-Ch-9KH">
-                                            <rect key="frame" x="134" y="89" width="47" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.8元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-Ch-9KH">
+                                            <rect key="frame" x="134" y="89" width="55" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="1" green="0.74583233440697816" blue="0.15998566248550539" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tt-jn-UWh">
-                                            <rect key="frame" x="134" y="8" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨梅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tt-jn-UWh">
+                                            <rect key="frame" x="134" y="8" width="34" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl1-TP-Aw7">
-                                            <rect key="frame" x="134" y="34" width="38" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我国特产水果之一，素有“初疑一颗值千金”之美誉。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl1-TP-Aw7">
+                                            <rect key="frame" x="134" y="34" width="396" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -398,6 +398,7 @@
                                         <constraint firstItem="QbF-Ch-9KH" firstAttribute="leading" secondItem="gTy-pw-Dtj" secondAttribute="trailing" constant="15" id="VK4-aI-T6y"/>
                                         <constraint firstItem="QbF-Ch-9KH" firstAttribute="leading" secondItem="4Tt-jn-UWh" secondAttribute="leading" id="Vaa-t1-AmP"/>
                                         <constraint firstItem="Xl1-TP-Aw7" firstAttribute="leading" secondItem="4Tt-jn-UWh" secondAttribute="leading" id="Xb9-Gd-Rik"/>
+                                        <constraint firstItem="Ks2-9q-G7v" firstAttribute="trailing" secondItem="Xl1-TP-Aw7" secondAttribute="trailing" constant="50" id="deZ-Kc-7mu"/>
                                         <constraint firstItem="Xl1-TP-Aw7" firstAttribute="top" secondItem="4Tt-jn-UWh" secondAttribute="bottom" constant="5" id="qci-hs-05A"/>
                                         <constraint firstItem="QbF-Ch-9KH" firstAttribute="bottom" secondItem="gTy-pw-Dtj" secondAttribute="bottom" id="uqt-eM-sol"/>
                                     </constraints>
@@ -423,7 +424,8 @@
     </scenes>
     <resources>
         <image name="edit" width="32" height="32"/>
-        <image name="favorite" width="16" height="16"/>
+        <image name="favorite" width="32" height="32"/>
+        <image name="杨梅" width="146" height="110"/>
         <image name="默认头像" width="96" height="96"/>
     </resources>
 </document>
