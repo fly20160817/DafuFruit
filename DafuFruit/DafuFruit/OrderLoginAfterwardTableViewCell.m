@@ -7,6 +7,8 @@
 //
 
 #import "OrderLoginAfterwardTableViewCell.h"
+#import "OrderLoginAfterwardsViewController.h"
+#import "PostMomentViewController.h"
 
 @implementation OrderLoginAfterwardTableViewCell
 
@@ -20,9 +22,6 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)judgeBtn:(UIButton *)sender forEvent:(UIEvent *)event
-{
-    
-}
+
 
 @end

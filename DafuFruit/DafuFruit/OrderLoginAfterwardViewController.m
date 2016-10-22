@@ -8,12 +8,14 @@
 
 #import "OrderLoginAfterwardViewController.h"
 #import "OrderLoginAfterwardsTableViewCell.h"
+#import "PostMomentViewController.h"
 
 @interface OrderLoginAfterwardViewController ()
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) UIView * modal;
+- (IBAction)judgeBtn:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
 
@@ -111,4 +113,13 @@
 }
 
 
+- (IBAction)judgeBtn:(UIButton *)sender forEvent:(UIEvent *)event
+{
+    
+    PostMomentViewController * post = [[PostMomentViewController alloc] init];
+    
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:post];
+    
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
+}
 @end

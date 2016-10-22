@@ -19,6 +19,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *orderNumber;
 
 
-- (IBAction)judgeBtn:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
