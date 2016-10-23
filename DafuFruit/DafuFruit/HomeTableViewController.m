@@ -8,6 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "ActivityTableViewCell.h"
 #define KOUNT 3
 @interface HomeTableViewController ()<CLLocationManagerDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;//定位器
@@ -26,6 +27,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"水果滴滴鲜";
     [self setHeaderView];
+    //去除多余的线
+    self.tableView.tableFooterView = [[UIView alloc] init];
     [self locationConfiguration];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -262,19 +265,22 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.view.bounds.size.width/4-15/4+20;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-    }
-
+    ActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"activityCell" forIndexPath:indexPath];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
     // Configure the cell...
-    
+    [cell.changyikouImg addGestureRecognizer:tap];
     return cell;
 }
 
-
+//摸了后做的事情
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -318,5 +324,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)pushto{
+    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Detail"]animated:YES];
+}
 @end

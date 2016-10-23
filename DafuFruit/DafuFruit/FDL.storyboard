@@ -12,27 +12,101 @@
         <scene sceneID="HIH-HT-Oee">
             <objects>
                 <tableViewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CNN-Kx-J8E" customClass="HomeTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" id="7uF-eK-abE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" id="7uF-eK-abE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" textLabel="Xin-RH-MzA" rowHeight="127" style="IBUITableViewCellStyleDefault" id="Uzq-R2-gL6">
-                                <rect key="frame" x="0.0" y="28" width="600" height="127"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="activityCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="activityCell" rowHeight="220" id="Uzq-R2-gL6" customClass="ActivityTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="220"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uzq-R2-gL6" id="m3d-hl-fYy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="126"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="219"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xin-RH-MzA">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="126"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="尝一口" translatesAutoresizingMaskIntoConstraints="NO" id="xVu-mB-dCn">
+                                            <rect key="frame" x="30" y="10" width="113" height="113"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="xVu-mB-dCn" secondAttribute="height" multiplier="1:1" id="FGP-0n-ka7"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="尝一口" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-qv-vKX">
+                                            <rect key="frame" x="63" y="119" width="51" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="限时促销" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqz-Sy-GnC">
+                                            <rect key="frame" x="347" y="124" width="68" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="精品推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-fx-e3e">
+                                            <rect key="frame" x="199" y="127" width="68" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="精品推荐" translatesAutoresizingMaskIntoConstraints="NO" id="XSs-ev-GO9">
+                                            <rect key="frame" x="173" y="10" width="112" height="113"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="XSs-ev-GO9" secondAttribute="height" multiplier="1:1" id="z83-kf-eVm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="限时促销" translatesAutoresizingMaskIntoConstraints="NO" id="dnE-st-OEN">
+                                            <rect key="frame" x="315" y="10" width="113" height="113"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="dnE-st-OEN" secondAttribute="height" multiplier="1:1" id="TgA-sM-hrl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="回头客" translatesAutoresizingMaskIntoConstraints="NO" id="ZPJ-hJ-7NF">
+                                            <rect key="frame" x="458" y="10" width="112" height="113"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ZPJ-hJ-7NF" secondAttribute="height" multiplier="1:1" id="X8p-sc-Gs3"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="回头客" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2m-32-ANN">
+                                            <rect key="frame" x="495" y="122" width="51" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.86862002130000004" green="1" blue="0.38742915389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="ZPJ-hJ-7NF" firstAttribute="leading" secondItem="dnE-st-OEN" secondAttribute="trailing" constant="30" id="4vb-5z-vEf"/>
+                                        <constraint firstItem="qwE-qv-vKX" firstAttribute="bottom" secondItem="xVu-mB-dCn" secondAttribute="bottom" constant="17" id="5a6-V5-mO4"/>
+                                        <constraint firstItem="tZM-fx-e3e" firstAttribute="centerY" secondItem="qwE-qv-vKX" secondAttribute="centerY" id="5ya-lt-mE8"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZPJ-hJ-7NF" secondAttribute="trailing" constant="30" id="Ath-Fz-paS"/>
+                                        <constraint firstItem="dnE-st-OEN" firstAttribute="leading" secondItem="XSs-ev-GO9" secondAttribute="trailing" constant="30" id="CKY-oY-jzJ"/>
+                                        <constraint firstItem="xVu-mB-dCn" firstAttribute="top" secondItem="m3d-hl-fYy" secondAttribute="top" constant="10" id="CiU-fP-sdV"/>
+                                        <constraint firstItem="tZM-fx-e3e" firstAttribute="centerX" secondItem="XSs-ev-GO9" secondAttribute="centerX" id="E4r-rf-j0h"/>
+                                        <constraint firstItem="ZPJ-hJ-7NF" firstAttribute="centerY" secondItem="xVu-mB-dCn" secondAttribute="centerY" id="FFZ-q6-haF"/>
+                                        <constraint firstItem="qwE-qv-vKX" firstAttribute="centerX" secondItem="xVu-mB-dCn" secondAttribute="centerX" id="JC7-2s-EBA"/>
+                                        <constraint firstItem="dnE-st-OEN" firstAttribute="centerY" secondItem="xVu-mB-dCn" secondAttribute="centerY" id="Lju-gP-Wou"/>
+                                        <constraint firstItem="XSs-ev-GO9" firstAttribute="centerY" secondItem="xVu-mB-dCn" secondAttribute="centerY" id="MoX-Va-f3V"/>
+                                        <constraint firstItem="oqz-Sy-GnC" firstAttribute="centerX" secondItem="dnE-st-OEN" secondAttribute="centerX" id="PPu-8y-KGx"/>
+                                        <constraint firstItem="XSs-ev-GO9" firstAttribute="leading" secondItem="xVu-mB-dCn" secondAttribute="trailing" constant="30" id="Rvr-NJ-gZj"/>
+                                        <constraint firstItem="xVu-mB-dCn" firstAttribute="leading" secondItem="m3d-hl-fYy" secondAttribute="leading" constant="30" id="VjS-v7-pT0"/>
+                                        <constraint firstItem="oqz-Sy-GnC" firstAttribute="centerY" secondItem="qwE-qv-vKX" secondAttribute="centerY" id="YNc-TF-8GB"/>
+                                        <constraint firstItem="XSs-ev-GO9" firstAttribute="width" secondItem="xVu-mB-dCn" secondAttribute="width" id="i0i-hM-3F9"/>
+                                        <constraint firstItem="dnE-st-OEN" firstAttribute="width" secondItem="xVu-mB-dCn" secondAttribute="width" id="nMs-ac-oMX"/>
+                                        <constraint firstItem="P2m-32-ANN" firstAttribute="centerY" secondItem="qwE-qv-vKX" secondAttribute="centerY" id="nZS-0f-ddN"/>
+                                        <constraint firstItem="ZPJ-hJ-7NF" firstAttribute="width" secondItem="xVu-mB-dCn" secondAttribute="width" id="suc-gn-Kki"/>
+                                        <constraint firstItem="P2m-32-ANN" firstAttribute="centerX" secondItem="ZPJ-hJ-7NF" secondAttribute="centerX" id="ydl-bw-sEB"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="changyikouImg" destination="xVu-mB-dCn" id="r8o-y7-M6L"/>
+                                    <outlet property="changyikouLbl" destination="qwE-qv-vKX" id="x20-sP-6fg"/>
+                                    <outlet property="huitoukeImg" destination="ZPJ-hJ-7NF" id="AEh-Kx-Ghi"/>
+                                    <outlet property="huitoukeLbl" destination="P2m-32-ANN" id="rJa-JN-dd5"/>
+                                    <outlet property="jingpintuijianImg" destination="XSs-ev-GO9" id="HE6-BZ-40v"/>
+                                    <outlet property="jingpintuijianLbl" destination="tZM-fx-e3e" id="g6H-Wr-cbP"/>
+                                    <outlet property="xianshicuxiaoImg" destination="dnE-st-OEN" id="LPr-CG-JJb"/>
+                                    <outlet property="xianshicuxiaoLbl" destination="oqz-Sy-GnC" id="h31-s5-toc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -425,7 +499,11 @@
     <resources>
         <image name="edit" width="32" height="32"/>
         <image name="favorite" width="32" height="32"/>
+        <image name="回头客" width="512" height="512"/>
+        <image name="尝一口" width="256" height="256"/>
         <image name="杨梅" width="146" height="110"/>
+        <image name="精品推荐" width="64" height="64"/>
+        <image name="限时促销" width="64" height="64"/>
         <image name="默认头像" width="96" height="96"/>
     </resources>
 </document>
