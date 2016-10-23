@@ -276,15 +276,23 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.view.bounds.size.width/4-15/4+20;
+    if (indexPath.section == 0) {
+        return self.view.bounds.size.width/4-9;
+    }
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
     ActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"activityCell" forIndexPath:indexPath];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
-    // Configure the cell...
-    [cell.changyikouImg addGestureRecognizer:tap];
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
+    [cell.changyikouImg addGestureRecognizer:tap1];
+        UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
+        [cell.jingpintuijianImg addGestureRecognizer:tap2];
+        UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
+        [cell.xianshicuxiaoImg addGestureRecognizer:tap3];
+        UITapGestureRecognizer *tap4 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
+        [cell.huitoukeImg addGestureRecognizer:tap4];
     return cell;
     }else {
         FavouriteFruitTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"favouriteCell" forIndexPath:indexPath];
@@ -343,6 +351,6 @@
 }
 */
 - (void)pushto{
-    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Detail"]animated:YES];
+    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Favourit"]animated:YES];
 }
 @end

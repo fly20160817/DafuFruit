@@ -529,7 +529,7 @@
                                                 <constraint firstAttribute="width" constant="35" id="OQK-Xw-CPu"/>
                                                 <constraint firstAttribute="width" secondItem="PNQ-e3-FRd" secondAttribute="height" id="Ujr-tS-Qgb"/>
                                             </constraints>
-                                            <state key="normal" title="Button" image="favorite"/>
+                                            <state key="normal" title="Button" image="add"/>
                                             <connections>
                                                 <action selector="favouriteBtn:forEvent:" destination="1je-U1-fqE" eventType="touchUpInside" id="0Y1-lt-AbI"/>
                                             </connections>
@@ -581,7 +581,6 @@
     <resources>
         <image name="add" width="193" height="193"/>
         <image name="edit" width="32" height="32"/>
-        <image name="favorite" width="32" height="32"/>
         <image name="回头客" width="512" height="512"/>
         <image name="尝一口" width="256" height="256"/>
         <image name="杨梅" width="146" height="110"/>
