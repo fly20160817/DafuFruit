@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLbl;
 @property (weak, nonatomic) IBOutlet UILabel *fruitNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLbl;
+@property (weak, nonatomic) IBOutlet UILabel *quantifierLbl;
 - (IBAction)favouriteBtn:(UIButton *)sender forEvent:(UIEvent *)event;
 
 //申明一个属性去表示当前实例化的细胞的组号与行号

@@ -9,6 +9,8 @@
 #import "HomeTableViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "ActivityTableViewCell.h"
+#import "FavouriteFruitTableViewCell.h"
+
 #define KOUNT 3
 @interface HomeTableViewController ()<CLLocationManagerDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;//定位器
@@ -257,24 +259,40 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 1;
+    if (section == 0) {
+        return 1;
+    }else{
+    return 10;
+    }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 10;
+}
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return self.view.bounds.size.width/4-15/4+20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
     ActivityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"activityCell" forIndexPath:indexPath];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushto)];
     // Configure the cell...
     [cell.changyikouImg addGestureRecognizer:tap];
     return cell;
+    }else {
+        FavouriteFruitTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"favouriteCell" forIndexPath:indexPath];
+        
+        return cell;
+
+    }
+    
 }
 
 //摸了后做的事情

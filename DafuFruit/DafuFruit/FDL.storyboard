@@ -108,6 +108,79 @@
                                     <outlet property="xianshicuxiaoLbl" destination="oqz-Sy-GnC" id="h31-s5-toc"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteCell" rowHeight="123" id="5bH-gu-oaZ" customClass="FavouriteFruitTableViewCell">
+                                <rect key="frame" x="0.0" y="248" width="600" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5bH-gu-oaZ" id="ucM-l9-hus">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杨梅" translatesAutoresizingMaskIntoConstraints="NO" id="U04-Gj-fQu">
+                                            <rect key="frame" x="15" y="5" width="112" height="112"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="U04-Gj-fQu" secondAttribute="height" multiplier="1:1" id="3AK-DE-8j9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.8元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kug-Ig-Bbp">
+                                            <rect key="frame" x="142" y="94" width="55" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" red="1" green="0.74583233439999996" blue="0.15998566249999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨梅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qev-2I-QmS">
+                                            <rect key="frame" x="142" y="5" width="34" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我国特产水果之一，素有“初疑一颗值千金”之美誉。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEp-1X-AXG">
+                                            <rect key="frame" x="142" y="31" width="388" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-uk-I4U">
+                                            <rect key="frame" x="545" y="44" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="Op4-bk-gby"/>
+                                                <constraint firstAttribute="width" secondItem="yrb-uk-I4U" secondAttribute="height" id="g65-96-iOa"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="add"/>
+                                            <connections>
+                                                <action selector="favouriteBtn:forEvent:" destination="5bH-gu-oaZ" eventType="touchUpInside" id="H8H-og-kub"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-ex-im6">
+                                            <rect key="frame" x="212" y="97" width="37" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="DEp-1X-AXG" firstAttribute="leading" secondItem="qev-2I-QmS" secondAttribute="leading" id="1Rk-TX-iCF"/>
+                                        <constraint firstItem="kug-Ig-Bbp" firstAttribute="bottom" secondItem="U04-Gj-fQu" secondAttribute="bottom" id="2Vc-0s-mCz"/>
+                                        <constraint firstItem="kug-Ig-Bbp" firstAttribute="leading" secondItem="U04-Gj-fQu" secondAttribute="trailing" constant="15" id="EwG-Jf-YDF"/>
+                                        <constraint firstAttribute="trailing" secondItem="yrb-uk-I4U" secondAttribute="trailing" constant="20" id="FVY-73-yne"/>
+                                        <constraint firstItem="DEp-1X-AXG" firstAttribute="top" secondItem="qev-2I-QmS" secondAttribute="bottom" constant="5" id="IgD-uF-puS"/>
+                                        <constraint firstItem="qev-2I-QmS" firstAttribute="top" secondItem="U04-Gj-fQu" secondAttribute="top" id="K6w-Ec-CC4"/>
+                                        <constraint firstItem="fvf-ex-im6" firstAttribute="centerY" secondItem="kug-Ig-Bbp" secondAttribute="centerY" id="Tpc-gv-MTN"/>
+                                        <constraint firstItem="yrb-uk-I4U" firstAttribute="trailing" secondItem="DEp-1X-AXG" secondAttribute="trailing" constant="50" id="bl3-Mr-b68"/>
+                                        <constraint firstItem="yrb-uk-I4U" firstAttribute="centerY" secondItem="ucM-l9-hus" secondAttribute="centerY" id="fVM-vp-GKm"/>
+                                        <constraint firstItem="U04-Gj-fQu" firstAttribute="top" secondItem="ucM-l9-hus" secondAttribute="top" constant="5" id="fiJ-jq-4zj"/>
+                                        <constraint firstItem="fvf-ex-im6" firstAttribute="leading" secondItem="kug-Ig-Bbp" secondAttribute="trailing" constant="15" id="pHF-Rw-wkg"/>
+                                        <constraint firstAttribute="bottom" secondItem="U04-Gj-fQu" secondAttribute="bottom" constant="5" id="rmF-ea-32n"/>
+                                        <constraint firstItem="U04-Gj-fQu" firstAttribute="leading" secondItem="ucM-l9-hus" secondAttribute="leading" constant="15" id="sgP-2d-fMg"/>
+                                        <constraint firstItem="kug-Ig-Bbp" firstAttribute="leading" secondItem="qev-2I-QmS" secondAttribute="leading" id="wB7-4Y-nWj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLbl" destination="DEp-1X-AXG" id="1GQ-Uh-iqv"/>
+                                    <outlet property="fruitImg" destination="U04-Gj-fQu" id="yAi-w7-3i2"/>
+                                    <outlet property="fruitNameLbl" destination="qev-2I-QmS" id="ORl-nz-19J"/>
+                                    <outlet property="priceLbl" destination="kug-Ig-Bbp" id="NUP-SS-Suk"/>
+                                    <outlet property="quantifierLbl" destination="fvf-ex-im6" id="d0y-k1-cAy"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="CNN-Kx-J8E" id="vd6-nB-qKo"/>
@@ -420,68 +493,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteCell" rowHeight="123" id="uc9-xV-gb4" customClass="FavouriteFruitTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteCell" rowHeight="123" id="1je-U1-fqE" customClass="FavouriteFruitTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="123"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uc9-xV-gb4" id="i1d-m0-c9R">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1je-U1-fqE" id="t4p-Ok-vig">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杨梅" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-pw-Dtj">
-                                            <rect key="frame" x="15" y="8" width="104" height="104"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杨梅" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-lB-Fe5">
+                                            <rect key="frame" x="15" y="5" width="112" height="112"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="gTy-pw-Dtj" secondAttribute="height" multiplier="1:1" id="fOj-9H-gcL"/>
+                                                <constraint firstAttribute="width" secondItem="c9N-lB-Fe5" secondAttribute="height" multiplier="1:1" id="Hl2-MY-udh"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.8元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-Ch-9KH">
-                                            <rect key="frame" x="134" y="89" width="55" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.8元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szV-zh-V49">
+                                            <rect key="frame" x="142" y="94" width="55" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" red="1" green="0.74583233440697816" blue="0.15998566248550539" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="0.74583233439999996" blue="0.15998566249999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨梅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tt-jn-UWh">
-                                            <rect key="frame" x="134" y="8" width="34" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨梅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-Gj-58w">
+                                            <rect key="frame" x="142" y="5" width="34" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我国特产水果之一，素有“初疑一颗值千金”之美誉。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl1-TP-Aw7">
-                                            <rect key="frame" x="134" y="34" width="396" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我国特产水果之一，素有“初疑一颗值千金”之美誉。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3z-M1-0l4">
+                                            <rect key="frame" x="142" y="31" width="388" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-9q-G7v">
-                                            <rect key="frame" x="540" y="41" width="40" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNQ-e3-FRd">
+                                            <rect key="frame" x="545" y="44" width="35" height="35"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Ks2-9q-G7v" secondAttribute="height" id="55a-al-0m1"/>
-                                                <constraint firstAttribute="width" constant="40" id="dmu-td-VKv"/>
+                                                <constraint firstAttribute="width" constant="35" id="OQK-Xw-CPu"/>
+                                                <constraint firstAttribute="width" secondItem="PNQ-e3-FRd" secondAttribute="height" id="Ujr-tS-Qgb"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="favorite"/>
                                             <connections>
-                                                <action selector="favouriteBtn:forEvent:" destination="uc9-xV-gb4" eventType="touchUpInside" id="CZp-dn-pIF"/>
+                                                <action selector="favouriteBtn:forEvent:" destination="1je-U1-fqE" eventType="touchUpInside" id="0Y1-lt-AbI"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjF-Sd-H92">
+                                            <rect key="frame" x="212" y="97" width="37" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gTy-pw-Dtj" firstAttribute="top" secondItem="i1d-m0-c9R" secondAttribute="top" constant="8" id="8gK-Fq-iDm"/>
-                                        <constraint firstItem="4Tt-jn-UWh" firstAttribute="top" secondItem="gTy-pw-Dtj" secondAttribute="top" id="Fc0-ZF-Ge8"/>
-                                        <constraint firstAttribute="trailing" secondItem="Ks2-9q-G7v" secondAttribute="trailing" constant="20" id="GpL-je-2XF"/>
-                                        <constraint firstItem="Ks2-9q-G7v" firstAttribute="centerY" secondItem="i1d-m0-c9R" secondAttribute="centerY" id="Khz-OP-e9E"/>
-                                        <constraint firstAttribute="bottom" secondItem="gTy-pw-Dtj" secondAttribute="bottom" constant="10" id="MxZ-VU-WeW"/>
-                                        <constraint firstItem="gTy-pw-Dtj" firstAttribute="leading" secondItem="i1d-m0-c9R" secondAttribute="leading" constant="15" id="QkV-fJ-QxF"/>
-                                        <constraint firstItem="QbF-Ch-9KH" firstAttribute="leading" secondItem="gTy-pw-Dtj" secondAttribute="trailing" constant="15" id="VK4-aI-T6y"/>
-                                        <constraint firstItem="QbF-Ch-9KH" firstAttribute="leading" secondItem="4Tt-jn-UWh" secondAttribute="leading" id="Vaa-t1-AmP"/>
-                                        <constraint firstItem="Xl1-TP-Aw7" firstAttribute="leading" secondItem="4Tt-jn-UWh" secondAttribute="leading" id="Xb9-Gd-Rik"/>
-                                        <constraint firstItem="Ks2-9q-G7v" firstAttribute="trailing" secondItem="Xl1-TP-Aw7" secondAttribute="trailing" constant="50" id="deZ-Kc-7mu"/>
-                                        <constraint firstItem="Xl1-TP-Aw7" firstAttribute="top" secondItem="4Tt-jn-UWh" secondAttribute="bottom" constant="5" id="qci-hs-05A"/>
-                                        <constraint firstItem="QbF-Ch-9KH" firstAttribute="bottom" secondItem="gTy-pw-Dtj" secondAttribute="bottom" id="uqt-eM-sol"/>
+                                        <constraint firstAttribute="bottom" secondItem="c9N-lB-Fe5" secondAttribute="bottom" constant="5" id="17E-cO-H8l"/>
+                                        <constraint firstItem="c9N-lB-Fe5" firstAttribute="leading" secondItem="t4p-Ok-vig" secondAttribute="leading" constant="15" id="3Dn-tV-5LQ"/>
+                                        <constraint firstItem="szV-zh-V49" firstAttribute="bottom" secondItem="c9N-lB-Fe5" secondAttribute="bottom" id="3Z2-ya-ah7"/>
+                                        <constraint firstItem="x3z-M1-0l4" firstAttribute="leading" secondItem="TcV-Gj-58w" secondAttribute="leading" id="HKJ-t1-Xi2"/>
+                                        <constraint firstItem="szV-zh-V49" firstAttribute="leading" secondItem="TcV-Gj-58w" secondAttribute="leading" id="JxX-Gs-wJj"/>
+                                        <constraint firstItem="x3z-M1-0l4" firstAttribute="top" secondItem="TcV-Gj-58w" secondAttribute="bottom" constant="5" id="KMo-pm-S68"/>
+                                        <constraint firstItem="OjF-Sd-H92" firstAttribute="leading" secondItem="szV-zh-V49" secondAttribute="trailing" constant="15" id="Tu9-EZ-zy9"/>
+                                        <constraint firstItem="c9N-lB-Fe5" firstAttribute="top" secondItem="t4p-Ok-vig" secondAttribute="top" constant="5" id="X3l-tP-hRS"/>
+                                        <constraint firstItem="TcV-Gj-58w" firstAttribute="top" secondItem="c9N-lB-Fe5" secondAttribute="top" id="aV8-GB-3sj"/>
+                                        <constraint firstItem="PNQ-e3-FRd" firstAttribute="centerY" secondItem="t4p-Ok-vig" secondAttribute="centerY" id="abV-Sx-fGU"/>
+                                        <constraint firstItem="OjF-Sd-H92" firstAttribute="centerY" secondItem="szV-zh-V49" secondAttribute="centerY" id="ce0-SZ-a4Y"/>
+                                        <constraint firstItem="PNQ-e3-FRd" firstAttribute="trailing" secondItem="x3z-M1-0l4" secondAttribute="trailing" constant="50" id="tIH-1s-Vk8"/>
+                                        <constraint firstItem="szV-zh-V49" firstAttribute="leading" secondItem="c9N-lB-Fe5" secondAttribute="trailing" constant="15" id="v5q-Yo-Ai3"/>
+                                        <constraint firstAttribute="trailing" secondItem="PNQ-e3-FRd" secondAttribute="trailing" constant="20" id="zJF-EN-la5"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLbl" destination="Xl1-TP-Aw7" id="0o1-YD-FYq"/>
-                                    <outlet property="fruitImg" destination="gTy-pw-Dtj" id="9uK-9e-0np"/>
-                                    <outlet property="fruitNameLbl" destination="4Tt-jn-UWh" id="2px-7K-2Na"/>
-                                    <outlet property="priceLbl" destination="QbF-Ch-9KH" id="OGB-9l-KaG"/>
+                                    <outlet property="descriptionLbl" destination="x3z-M1-0l4" id="6LY-7j-rdv"/>
+                                    <outlet property="fruitImg" destination="c9N-lB-Fe5" id="fkY-HM-4EX"/>
+                                    <outlet property="fruitNameLbl" destination="TcV-Gj-58w" id="p1E-DJ-ODo"/>
+                                    <outlet property="priceLbl" destination="szV-zh-V49" id="RUF-Vr-x3r"/>
+                                    <outlet property="quantifierLbl" destination="OjF-Sd-H92" id="ddg-uD-hPX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -497,6 +579,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="193" height="193"/>
         <image name="edit" width="32" height="32"/>
         <image name="favorite" width="32" height="32"/>
         <image name="回头客" width="512" height="512"/>
