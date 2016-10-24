@@ -8,7 +8,7 @@
 
 #import "RegironViewController.h"
 #import "DGTimerButton.h"
-@interface RegironViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface RegironViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userPhone;
 @property (weak, nonatomic) IBOutlet UITextField *VerificationCode;
 @property (weak, nonatomic) IBOutlet UITextField *psWord;
@@ -25,6 +25,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _userPhone.delegate = self;
+    _VerificationCode.delegate = self;
+    _psWord.delegate = self;
+    _confirm.delegate = self;
     
     UIButton *but =[[UIButton alloc]initWithFrame:CGRectMake(5, 20, 50, 50)];
     [but setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
@@ -68,6 +72,12 @@
                                 
                             }];
     [self.view addSubview:bu];
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHide:)];
+    //设置成NO表示当前控件响应后会传播到其他控件上，默认为YES。
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    //将触摸事件添加到当前view
+    [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 
 
@@ -157,7 +167,22 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+ 
 */
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    //让键盘收回去
+    [textField resignFirstResponder];
+    return YES;
+    
+}
+
+-(void)keyboardHide:(UITapGestureRecognizer*)tap{
+    [_userPhone resignFirstResponder];
+    [_psWord resignFirstResponder];
+    [_VerificationCode resignFirstResponder];
+    [_confirm resignFirstResponder];
+}
 
 
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -191,6 +216,12 @@
         }
         else if (error.code == 202){
             [Utilities popUpAlertViewWithMsg:@"用户名已经被占用" andTitle:@"注册失败" onView:self];
+        } else if (error.code == 214){
+            [Utilities popUpAlertViewWithMsg:@"手机号码已经被注册" andTitle:@"注册失败" onView:self];
+        } else if (error.code == 218){
+            [Utilities popUpAlertViewWithMsg:@"无效的密码，不允许空白密码" andTitle:@"注册失败" onView:self];
+        } else if (error.code == 502){
+            [Utilities popUpAlertViewWithMsg:@"服务器维护中" andTitle:@"注册失败" onView:self];
         }else{
             [Utilities popUpAlertViewWithMsg:@"请保持网络通畅" andTitle:@"注册失败" onView:self];
         }
