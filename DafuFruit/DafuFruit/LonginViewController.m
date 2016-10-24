@@ -10,6 +10,7 @@
 #import "PersonTableViewController.h"
 #import "RegironViewController.h"
 @interface LonginViewController ()<UITextFieldDelegate>
+- (IBAction)QQbnt:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -123,5 +124,7 @@
 }
 
 - (IBAction)forgotPsd:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+- (IBAction)QQbnt:(UIButton *)sender forEvent:(UIEvent *)event {
 }
 @end

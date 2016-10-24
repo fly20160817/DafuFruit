@@ -65,23 +65,26 @@
                                     <constraint firstAttribute="width" constant="100" id="v67-MU-NpD"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-wG-Ces">
-                                <rect key="frame" x="275" y="648" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-wG-Ces">
+                                <rect key="frame" x="275" y="584" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="M9M-wG-Ces" secondAttribute="height" multiplier="1:1" id="BfA-3R-USY"/>
                                     <constraint firstAttribute="width" constant="50" id="S8H-s1-cz5"/>
                                 </constraints>
                                 <state key="normal" image="ic_landing_qq"/>
+                                <connections>
+                                    <action selector="QQbnt:forEvent:" destination="36y-Vg-arB" eventType="touchUpInside" id="voz-NV-nC1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-VQ-aOc">
-                                <rect key="frame" x="40" y="648" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-VQ-aOc">
+                                <rect key="frame" x="40" y="584" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oMq-VQ-aOc" secondAttribute="height" multiplier="1:1" id="Wyq-wf-e0u"/>
                                 </constraints>
                                 <state key="normal" image="ic_landing_wechat"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fb-5t-JHA">
-                                <rect key="frame" x="510" y="648" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fb-5t-JHA">
+                                <rect key="frame" x="510" y="584" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Fb-5t-JHA" secondAttribute="height" multiplier="1:1" id="Kg2-4p-A5x"/>
                                 </constraints>
