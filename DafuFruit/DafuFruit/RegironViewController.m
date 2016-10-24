@@ -161,14 +161,59 @@
 
 
 - (IBAction)carry:(UIButton *)sender forEvent:(UIEvent *)event {
-    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_userPhone.text smsCode:_VerificationCode.text block:^(AVUser *user, NSError *error) {
-        if ([_psWord.text isEqualToString:_confirm.text]) {
-            [self.navigationController popViewControllerAnimated:YES];
-        }else {
-            NSLog(@"密码错误");
+//    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_userPhone.text smsCode:_VerificationCode.text block:^(AVUser *user, NSError *error) {
+//        if ([_psWord.text isEqualToString:_confirm.text]) {
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }else {
+//            NSLog(@"密码错误");
+//        }
+//        NSLog(@"%@",error);
+//    }];
+    NSString *userPhone = self.userPhone.text;
+    NSString *password = self.psWord.text;
+    NSString *vc = self.VerificationCode.text;
+    NSString *cf = self.confirm.text;
+    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:userPhone smsCode:vc block:^(AVUser *user, NSError *error) {
+        if (error ==nil) {
+            if ([cf isEqualToString:password]) {
+                user.password = password;
+                user.mobilePhoneNumber = userPhone;
+                [user saveInBackground];
+                [self.navigationController popViewControllerAnimated:YES];
+            }else{
+                [Utilities popUpAlertViewWithMsg:@"两次密码不一致" andTitle:@"注册失败" onView:self];
+            }
+
+        }else if (error.code == 200){
+            [Utilities popUpAlertViewWithMsg:@"用户名为空" andTitle:@"注册失败" onView:self];
+        }else if (error.code == 201){
+            [Utilities popUpAlertViewWithMsg:@"密码为空" andTitle:@"注册失败" onView:self];
         }
-        NSLog(@"%@",error);
+        else if (error.code == 202){
+            [Utilities popUpAlertViewWithMsg:@"用户名已经被占用" andTitle:@"注册失败" onView:self];
+        }else{
+            [Utilities popUpAlertViewWithMsg:@"请保持网络通畅" andTitle:@"注册失败" onView:self];
+        }
+        
     }];
+//    if (userPhone && password && vc && cf) {
+//        if ([password isEqualToString:cf]) {
+//        AVUser *user = [AVUser user];
+//        user.username = userPhone;
+//        user.password = password;
+//        user.mobilePhoneNumber = userPhone;
+//        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (succeeded) {
+////                [self performSegueWithIdentifier:@"fromSignUpToProducts" sender:nil];
+//                [self.navigationController popViewControllerAnimated:YES];
+//            } else {
+//                NSLog(@"注册失败 %@", error);
+//            }
+//        }];
+//        }else{
+//            NSLog(@"两次密码不一致");
+//        }
+//    }
     
 }
 @end
