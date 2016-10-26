@@ -14,7 +14,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObS-jn-siV">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commidity_upimage" translatesAutoresizingMaskIntoConstraints="NO" id="v37-K7-Xbj">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杨梅" translatesAutoresizingMaskIntoConstraints="NO" id="v37-K7-Xbj">
                             <rect key="frame" x="12" y="14" width="350" height="250"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="250" id="8hJ-Me-8mv"/>
@@ -32,14 +32,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-ry-pEz">
                     <rect key="frame" x="0.0" y="278" width="375" height="102"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海王牌 钙加维咀嚼片 130g/30粒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpP-pg-C7C">
-                            <rect key="frame" x="13" y="13" width="230" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大浮 杨梅  5斤/一袋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpP-pg-C7C">
+                            <rect key="frame" x="13" y="13" width="140" height="20"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="补充钙和维生素D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-hF-JZg">
-                            <rect key="frame" x="13" y="43" width="109" height="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新鲜可口 能补充维生素" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-hF-JZg">
+                            <rect key="frame" x="13" y="43" width="144" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -114,6 +114,6 @@
     </objects>
     <resources>
         <image name="commidity_collection" width="38" height="38"/>
-        <image name="commidity_upimage" width="432" height="768"/>
+        <image name="杨梅" width="146" height="110"/>
     </resources>
 </document>
