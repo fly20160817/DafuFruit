@@ -18,6 +18,24 @@
 		8468FE881DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE871DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard */; };
 		8468FE8C1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */; };
 		8468FE8F1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */; };
+		846F11801DC0841D00EC79ED /* BGCenterLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11761DC0841D00EC79ED /* BGCenterLineLabel.m */; };
+		846F11811DC0841D00EC79ED /* BuyBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11781DC0841D00EC79ED /* BuyBottomView.m */; };
+		846F11821DC0841D00EC79ED /* BuyBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846F11791DC0841D00EC79ED /* BuyBottomView.xib */; };
+		846F11831DC0841D00EC79ED /* BuyMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F117B1DC0841D00EC79ED /* BuyMiddleView.m */; };
+		846F11841DC0841D00EC79ED /* BuyMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846F117C1DC0841D00EC79ED /* BuyMiddleView.xib */; };
+		846F11851DC0841D00EC79ED /* BuyTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F117E1DC0841D00EC79ED /* BuyTopView.m */; };
+		846F11861DC0841D00EC79ED /* BuyTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846F117F1DC0841D00EC79ED /* BuyTopView.xib */; };
+		846F118D1DC0843F00EC79ED /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11891DC0843F00EC79ED /* BuyViewController.m */; };
+		846F118E1DC0843F00EC79ED /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846F118A1DC0843F00EC79ED /* BuyViewController.xib */; };
+		846F118F1DC0843F00EC79ED /* NaviBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F118C1DC0843F00EC79ED /* NaviBase.m */; };
+		846F11921DC0847600EC79ED /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 846F11911DC0847600EC79ED /* MJRefresh.bundle */; };
+		846F119C1DC0847E00EC79ED /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11951DC0847E00EC79ED /* MJRefreshBaseView.m */; };
+		846F119D1DC0847E00EC79ED /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11971DC0847E00EC79ED /* MJRefreshConst.m */; };
+		846F119E1DC0847E00EC79ED /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11991DC0847E00EC79ED /* MJRefreshFooterView.m */; };
+		846F119F1DC0847E00EC79ED /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F119B1DC0847E00EC79ED /* MJRefreshHeaderView.m */; };
+		846F11A31DC0849000EC79ED /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A21DC0849000EC79ED /* global.m */; };
+		846F11A91DC084A300EC79ED /* MyOrderTopTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A61DC084A300EC79ED /* MyOrderTopTabBar.m */; };
+		846F11AA1DC084A300EC79ED /* TabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A81DC084A300EC79ED /* TabButton.m */; };
 		8473B4011DB8972E009E726F /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4001DB8972E009E726F /* LonginViewController.m */; };
 		848CE9C51DBDE30400C9A7FB /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CE9C41DBDE30400C9A7FB /* RegironViewController.m */; };
 		8494107B1DBA142C008DD06D /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849410791DBA142C008DD06D /* Wjt.storyboard */; };
@@ -90,6 +108,38 @@
 		8468FE8B1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LFOrderLoginAfterward.storyboard; sourceTree = "<group>"; };
 		8468FE8D1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderLoginAfterwardTableViewCell.h; sourceTree = "<group>"; };
 		8468FE8E1DB60F95002BF3C7 /* OrderLoginAfterwardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLoginAfterwardTableViewCell.m; sourceTree = "<group>"; };
+		846F11751DC0841D00EC79ED /* BGCenterLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCenterLineLabel.h; sourceTree = "<group>"; };
+		846F11761DC0841D00EC79ED /* BGCenterLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCenterLineLabel.m; sourceTree = "<group>"; };
+		846F11771DC0841D00EC79ED /* BuyBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyBottomView.h; sourceTree = "<group>"; };
+		846F11781DC0841D00EC79ED /* BuyBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyBottomView.m; sourceTree = "<group>"; };
+		846F11791DC0841D00EC79ED /* BuyBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyBottomView.xib; sourceTree = "<group>"; };
+		846F117A1DC0841D00EC79ED /* BuyMiddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMiddleView.h; sourceTree = "<group>"; };
+		846F117B1DC0841D00EC79ED /* BuyMiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMiddleView.m; sourceTree = "<group>"; };
+		846F117C1DC0841D00EC79ED /* BuyMiddleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyMiddleView.xib; sourceTree = "<group>"; };
+		846F117D1DC0841D00EC79ED /* BuyTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTopView.h; sourceTree = "<group>"; };
+		846F117E1DC0841D00EC79ED /* BuyTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTopView.m; sourceTree = "<group>"; };
+		846F117F1DC0841D00EC79ED /* BuyTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyTopView.xib; sourceTree = "<group>"; };
+		846F11881DC0843F00EC79ED /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
+		846F11891DC0843F00EC79ED /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
+		846F118A1DC0843F00EC79ED /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		846F118B1DC0843F00EC79ED /* NaviBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviBase.h; sourceTree = "<group>"; };
+		846F118C1DC0843F00EC79ED /* NaviBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviBase.m; sourceTree = "<group>"; };
+		846F11911DC0847600EC79ED /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		846F11931DC0847E00EC79ED /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		846F11941DC0847E00EC79ED /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		846F11951DC0847E00EC79ED /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		846F11961DC0847E00EC79ED /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		846F11971DC0847E00EC79ED /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		846F11981DC0847E00EC79ED /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		846F11991DC0847E00EC79ED /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		846F119A1DC0847E00EC79ED /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		846F119B1DC0847E00EC79ED /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		846F11A11DC0849000EC79ED /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		846F11A21DC0849000EC79ED /* global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = global.m; sourceTree = "<group>"; };
+		846F11A51DC084A300EC79ED /* MyOrderTopTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderTopTabBar.h; sourceTree = "<group>"; };
+		846F11A61DC084A300EC79ED /* MyOrderTopTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderTopTabBar.m; sourceTree = "<group>"; };
+		846F11A71DC084A300EC79ED /* TabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabButton.h; sourceTree = "<group>"; };
+		846F11A81DC084A300EC79ED /* TabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabButton.m; sourceTree = "<group>"; };
 		8473B3FF1DB8972E009E726F /* LonginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonginViewController.h; sourceTree = "<group>"; };
 		8473B4001DB8972E009E726F /* LonginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonginViewController.m; sourceTree = "<group>"; };
 		848CE9C31DBDE30400C9A7FB /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
@@ -178,6 +228,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846F11871DC0843000EC79ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				846F11881DC0843F00EC79ED /* BuyViewController.h */,
+				846F11891DC0843F00EC79ED /* BuyViewController.m */,
+				846F118A1DC0843F00EC79ED /* BuyViewController.xib */,
+				846F118B1DC0843F00EC79ED /* NaviBase.h */,
+				846F118C1DC0843F00EC79ED /* NaviBase.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		846F11901DC0846200EC79ED /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				846F11931DC0847E00EC79ED /* MJRefresh.h */,
+				846F11941DC0847E00EC79ED /* MJRefreshBaseView.h */,
+				846F11951DC0847E00EC79ED /* MJRefreshBaseView.m */,
+				846F11961DC0847E00EC79ED /* MJRefreshConst.h */,
+				846F11971DC0847E00EC79ED /* MJRefreshConst.m */,
+				846F11981DC0847E00EC79ED /* MJRefreshFooterView.h */,
+				846F11991DC0847E00EC79ED /* MJRefreshFooterView.m */,
+				846F119A1DC0847E00EC79ED /* MJRefreshHeaderView.h */,
+				846F119B1DC0847E00EC79ED /* MJRefreshHeaderView.m */,
+				846F11911DC0847600EC79ED /* MJRefresh.bundle */,
+			);
+			name = MJRefresh;
+			sourceTree = "<group>";
+		};
+		846F11A01DC0848300EC79ED /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				846F11A11DC0849000EC79ED /* global.h */,
+				846F11A21DC0849000EC79ED /* global.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		846F11A41DC0849200EC79ED /* MyOrderTopTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				846F11A51DC084A300EC79ED /* MyOrderTopTabBar.h */,
+				846F11A61DC084A300EC79ED /* MyOrderTopTabBar.m */,
+				846F11A71DC084A300EC79ED /* TabButton.h */,
+				846F11A81DC084A300EC79ED /* TabButton.m */,
+			);
+			name = MyOrderTopTabBar;
+			sourceTree = "<group>";
+		};
 		84F0EAA31DACD08300D31CA9 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +302,9 @@
 		84F0EAAE1DACD08400D31CA9 /* DafuFruit */ = {
 			isa = PBXGroup;
 			children = (
+				846F11A41DC0849200EC79ED /* MyOrderTopTabBar */,
+				846F11A01DC0848300EC79ED /* Tools */,
+				846F11901DC0846200EC79ED /* MJRefresh */,
 				C6BE19D71DADC98F00A7B477 /* Controller */,
 				C6BE19D61DADC98500A7B477 /* View */,
 				C6BE19D51DADC97900A7B477 /* Model */,
@@ -298,6 +400,18 @@
 				C6D6E0CD1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m */,
 				C6D6E0D51DBC92AA000050F6 /* ActivityTableViewCell.h */,
 				C6D6E0D61DBC92AA000050F6 /* ActivityTableViewCell.m */,
+				846F11751DC0841D00EC79ED /* BGCenterLineLabel.h */,
+				846F11761DC0841D00EC79ED /* BGCenterLineLabel.m */,
+				846F11771DC0841D00EC79ED /* BuyBottomView.h */,
+				846F11781DC0841D00EC79ED /* BuyBottomView.m */,
+				846F11791DC0841D00EC79ED /* BuyBottomView.xib */,
+				846F117A1DC0841D00EC79ED /* BuyMiddleView.h */,
+				846F117B1DC0841D00EC79ED /* BuyMiddleView.m */,
+				846F117C1DC0841D00EC79ED /* BuyMiddleView.xib */,
+				846F117D1DC0841D00EC79ED /* BuyTopView.h */,
+				846F117E1DC0841D00EC79ED /* BuyTopView.m */,
+				846F117F1DC0841D00EC79ED /* BuyTopView.xib */,
+				846F11871DC0843000EC79ED /* ViewController */,
 				849410791DBA142C008DD06D /* Wjt.storyboard */,
 				84F0EAC01DACD08400D31CA9 /* LaunchScreen.storyboard */,
 				C6E032351DB0D5060012677C /* FDL.storyboard */,
@@ -474,10 +588,15 @@
 				84F0EAC21DACD08400D31CA9 /* LaunchScreen.storyboard in Resources */,
 				8468FE881DB5F560002BF3C7 /* LFOrderLoginBefore.storyboard in Resources */,
 				8494107B1DBA142C008DD06D /* Wjt.storyboard in Resources */,
+				846F11821DC0841D00EC79ED /* BuyBottomView.xib in Resources */,
 				60CC561B1DB4607C00AF65FA /* liyu.storyboard in Resources */,
+				846F118E1DC0843F00EC79ED /* BuyViewController.xib in Resources */,
 				84F0EABF1DACD08400D31CA9 /* Assets.xcassets in Resources */,
+				846F11921DC0847600EC79ED /* MJRefresh.bundle in Resources */,
 				8468FE8C1DB5F5F9002BF3C7 /* LFOrderLoginAfterward.storyboard in Resources */,
 				84F0EABA1DACD08400D31CA9 /* Main.storyboard in Resources */,
+				846F11841DC0841D00EC79ED /* BuyMiddleView.xib in Resources */,
+				846F11861DC0841D00EC79ED /* BuyTopView.xib in Resources */,
 				C6E032361DB0D5060012677C /* FDL.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,19 +745,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846F119F1DC0847E00EC79ED /* MJRefreshHeaderView.m in Sources */,
 				C6BE19E31DADD08600A7B477 /* Utilities.m in Sources */,
 				043E21001DBB30DA0033AFFD /* BaseViewController.m in Sources */,
 				C6D311F61DB6156500F88CFD /* FunctionTableViewCell.m in Sources */,
+				846F119C1DC0847E00EC79ED /* MJRefreshBaseView.m in Sources */,
 				84F0EABD1DACD08400D31CA9 /* DafuFruit.xcdatamodeld in Sources */,
 				84F402C61DB60012004BEDF8 /* DGTimerButton.m in Sources */,
+				846F11851DC0841D00EC79ED /* BuyTopView.m in Sources */,
 				C6785F4E1DB4AC5500C39C2A /* PersonTableViewCell.m in Sources */,
+				846F11811DC0841D00EC79ED /* BuyBottomView.m in Sources */,
+				846F11801DC0841D00EC79ED /* BGCenterLineLabel.m in Sources */,
 				043E21091DBB34690033AFFD /* UIImage+fly.m in Sources */,
+				846F119E1DC0847E00EC79ED /* MJRefreshFooterView.m in Sources */,
 				C6785F4B1DB4988700C39C2A /* PersonTableViewController.m in Sources */,
 				043E20FD1DBB30880033AFFD /* PostMomentViewController.m in Sources */,
+				846F11831DC0841D00EC79ED /* BuyMiddleView.m in Sources */,
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
+				846F118D1DC0843F00EC79ED /* BuyViewController.m in Sources */,
 				8473B4011DB8972E009E726F /* LonginViewController.m in Sources */,
 				043E21051DBB33C10033AFFD /* UIButton+fly.m in Sources */,
 				C68C067A1DB0E13900945FAA /* TabViewController.m in Sources */,
+				846F118F1DC0843F00EC79ED /* NaviBase.m in Sources */,
+				846F11A91DC084A300EC79ED /* MyOrderTopTabBar.m in Sources */,
 				043E21061DBB33C10033AFFD /* Utility.m in Sources */,
 				C6D311F51DB6156500F88CFD /* PeopleTableViewCell.m in Sources */,
 				848CE9C51DBDE30400C9A7FB /* RegironViewController.m in Sources */,
@@ -651,6 +780,9 @@
 				8468FE861DB5F52E002BF3C7 /* OrderLoginBeforeViewController.m in Sources */,
 				C607E4411DB8708700B47241 /* AddressTableViewController.m in Sources */,
 				C607E4441DB873DC00B47241 /* AddressTableViewCell.m in Sources */,
+				846F119D1DC0847E00EC79ED /* MJRefreshConst.m in Sources */,
+				846F11AA1DC084A300EC79ED /* TabButton.m in Sources */,
+				846F11A31DC0849000EC79ED /* global.m in Sources */,
 				C6D6E0CE1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m in Sources */,
 				C6D6E0D71DBC92AA000050F6 /* ActivityTableViewCell.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
