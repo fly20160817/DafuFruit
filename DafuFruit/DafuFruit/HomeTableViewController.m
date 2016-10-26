@@ -10,6 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "ActivityTableViewCell.h"
 #import "FavouriteFruitTableViewCell.h"
+#import "BuyViewController.h"
+#import "global.h"
 
 #define KOUNT 3
 @interface HomeTableViewController ()<CLLocationManagerDelegate, UIScrollViewDelegate>
@@ -306,6 +308,7 @@
 //摸了后做的事情
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];//让灰不会灰
+    
 }
 /*
 // Override to support conditional editing of the table view.
@@ -351,6 +354,8 @@
 }
 */
 - (void)pushto{
-    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Favourit"]animated:YES];
+    //[self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"FDL" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"Favourit"]animated:YES];
+    BuyViewController* buy = [[BuyViewController alloc] init];
+    [self.navigationController pushViewController:buy animated:YES];
 }
 @end

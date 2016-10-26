@@ -114,6 +114,6 @@
     </objects>
     <resources>
         <image name="commidity_collection" width="38" height="38"/>
-        <image name="commidity_upimage" width="720" height="552"/>
+        <image name="commidity_upimage" width="432" height="768"/>
     </resources>
 </document>
