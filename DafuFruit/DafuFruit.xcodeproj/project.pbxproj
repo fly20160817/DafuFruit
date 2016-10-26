@@ -36,6 +36,9 @@
 		846F11A31DC0849000EC79ED /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A21DC0849000EC79ED /* global.m */; };
 		846F11A91DC084A300EC79ED /* MyOrderTopTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A61DC084A300EC79ED /* MyOrderTopTabBar.m */; };
 		846F11AA1DC084A300EC79ED /* TabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11A81DC084A300EC79ED /* TabButton.m */; };
+		846F11BA1DC09F4300EC79ED /* ChoseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11B51DC09F4300EC79ED /* ChoseView.m */; };
+		846F11BB1DC09F4300EC79ED /* TypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11B71DC09F4300EC79ED /* TypeView.m */; };
+		846F11BC1DC09F4300EC79ED /* BuyCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846F11B91DC09F4300EC79ED /* BuyCountView.m */; };
 		8473B4011DB8972E009E726F /* LonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B4001DB8972E009E726F /* LonginViewController.m */; };
 		848CE9C51DBDE30400C9A7FB /* RegironViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CE9C41DBDE30400C9A7FB /* RegironViewController.m */; };
 		8494107B1DBA142C008DD06D /* Wjt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849410791DBA142C008DD06D /* Wjt.storyboard */; };
@@ -140,6 +143,12 @@
 		846F11A61DC084A300EC79ED /* MyOrderTopTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderTopTabBar.m; sourceTree = "<group>"; };
 		846F11A71DC084A300EC79ED /* TabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabButton.h; sourceTree = "<group>"; };
 		846F11A81DC084A300EC79ED /* TabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabButton.m; sourceTree = "<group>"; };
+		846F11B41DC09F4300EC79ED /* ChoseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoseView.h; sourceTree = "<group>"; };
+		846F11B51DC09F4300EC79ED /* ChoseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoseView.m; sourceTree = "<group>"; };
+		846F11B61DC09F4300EC79ED /* TypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeView.h; sourceTree = "<group>"; };
+		846F11B71DC09F4300EC79ED /* TypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeView.m; sourceTree = "<group>"; };
+		846F11B81DC09F4300EC79ED /* BuyCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyCountView.h; sourceTree = "<group>"; };
+		846F11B91DC09F4300EC79ED /* BuyCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyCountView.m; sourceTree = "<group>"; };
 		8473B3FF1DB8972E009E726F /* LonginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonginViewController.h; sourceTree = "<group>"; };
 		8473B4001DB8972E009E726F /* LonginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonginViewController.m; sourceTree = "<group>"; };
 		848CE9C31DBDE30400C9A7FB /* RegironViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegironViewController.h; sourceTree = "<group>"; };
@@ -236,6 +245,12 @@
 				846F118A1DC0843F00EC79ED /* BuyViewController.xib */,
 				846F118B1DC0843F00EC79ED /* NaviBase.h */,
 				846F118C1DC0843F00EC79ED /* NaviBase.m */,
+				846F11B41DC09F4300EC79ED /* ChoseView.h */,
+				846F11B51DC09F4300EC79ED /* ChoseView.m */,
+				846F11B61DC09F4300EC79ED /* TypeView.h */,
+				846F11B71DC09F4300EC79ED /* TypeView.m */,
+				846F11B81DC09F4300EC79ED /* BuyCountView.h */,
+				846F11B91DC09F4300EC79ED /* BuyCountView.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -754,6 +769,7 @@
 				84F402C61DB60012004BEDF8 /* DGTimerButton.m in Sources */,
 				846F11851DC0841D00EC79ED /* BuyTopView.m in Sources */,
 				C6785F4E1DB4AC5500C39C2A /* PersonTableViewCell.m in Sources */,
+				846F11BA1DC09F4300EC79ED /* ChoseView.m in Sources */,
 				846F11811DC0841D00EC79ED /* BuyBottomView.m in Sources */,
 				846F11801DC0841D00EC79ED /* BGCenterLineLabel.m in Sources */,
 				043E21091DBB34690033AFFD /* UIImage+fly.m in Sources */,
@@ -761,6 +777,7 @@
 				C6785F4B1DB4988700C39C2A /* PersonTableViewController.m in Sources */,
 				043E20FD1DBB30880033AFFD /* PostMomentViewController.m in Sources */,
 				846F11831DC0841D00EC79ED /* BuyMiddleView.m in Sources */,
+				846F11BB1DC09F4300EC79ED /* TypeView.m in Sources */,
 				84F0EAB71DACD08400D31CA9 /* ViewController.m in Sources */,
 				846F118D1DC0843F00EC79ED /* BuyViewController.m in Sources */,
 				8473B4011DB8972E009E726F /* LonginViewController.m in Sources */,
@@ -784,6 +801,7 @@
 				846F11AA1DC084A300EC79ED /* TabButton.m in Sources */,
 				846F11A31DC0849000EC79ED /* global.m in Sources */,
 				C6D6E0CE1DB9C6CB000050F6 /* FavouriteFruitTableViewCell.m in Sources */,
+				846F11BC1DC09F4300EC79ED /* BuyCountView.m in Sources */,
 				C6D6E0D71DBC92AA000050F6 /* ActivityTableViewCell.m in Sources */,
 				84F0EAB11DACD08400D31CA9 /* main.m in Sources */,
 			);
